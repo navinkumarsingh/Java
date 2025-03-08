@@ -221,3 +221,68 @@ Closing the Scanner:
 
 Alternative Approach:
 - Using a switch statement instead of multiple if-else conditions would improve readability and efficiency.
+
+--------------------------------------------------
+9️⃣ Website Type and Protocol Finder
+--------------------------------------------------
+
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Creates a Scanner object to take input from the user.
+- sc.nextLine(); → Reads a full line of text entered by the user, which is expected to be a URL.
+
+Extracting Protocol:
+- url.substring(0, url.indexOf(":")); → Extracts the part before ":" to determine the protocol.
+- if(protocol.equals("http")) → Identifies "http" as Hypertext Transfer Protocol.
+- else if(protocol.equals("ftp")) → Identifies "ftp" as File Transfer Protocol.
+- else → Handles cases where the protocol is not recognized.
+
+Extracting Extension:
+- url.substring(url.lastIndexOf(".") + 1); → Extracts the part after the last "." to determine the website type.
+
+Detailed Explanation of above statement:
+1️⃣ url.lastIndexOf(".")
+lastIndexOf(".") finds the position of the last dot (.) in the given url string.
+Example:
+String url = "www.example.com";
+int index = url.lastIndexOf(".");
+System.out.println(index);
+Output: 11 (because the last dot is at index 11 in "www.example.com").
+2️⃣ url.lastIndexOf(".") + 1
+The +1 moves the starting position one step ahead of the last dot (.), so we skip the dot itself.
+Example:
+int startIndex = url.lastIndexOf(".") + 1;
+System.out.println(startIndex);
+Output: 12 (it moves from . to the first character after .).
+3️⃣ url.substring(url.lastIndexOf(".") + 1)
+substring(startIndex) extracts everything from that position to the end of the string.
+Example:
+String ext = url.substring(url.lastIndexOf(".") + 1);
+System.out.println(ext);
+Output: "com" (extracts "com" from "www.example.com").
+- if(ext.equals("com")) → Identifies a Commercial website.
+- else if(ext.equals("org")) → Identifies an Organization.
+- else if(ext.equals("gov")) → Identifies a Government website.
+- else → Handles cases where the extension is not recognized.
+
+Key Learning:
+- The program correctly extracts the protocol and extension from a given URL.
+- Uses `indexOf(":")` to locate the protocol and `lastIndexOf(".")` to locate the extension.
+- If the input does not contain a valid protocol or extension, it prints an appropriate message.
+
+Edge Cases:
+- If the URL does not contain ":", `indexOf(":")` will return -1, which can cause an error.
+- If the URL does not contain a ".", `lastIndexOf(".")` will return -1, leading to incorrect behavior.
+- Does not handle URLs that contain query parameters (e.g., "?id=123").
+
+Example Cases:
+- Input: "http://example.com" → Output: "Hypertext Transfer Protocol" and "Commercial".
+- Input: "ftp://mysite.org" → Output: "File Transfer Protocol" and "Organization".
+- Input: "https://gov.in" → Output: "Not a Valid protocol" and "Not a valid extension".
+- Input: "example.com" → Output: May cause an error due to missing protocol.
+
+Closing the Scanner:
+- sc.close(); → Closes the Scanner object to prevent memory leaks.
+
+Alternative Approach:
+- Using `startsWith("http")` or `startsWith("ftp")` instead of `indexOf(":")` to avoid errors.
+- Using a switch statement instead of multiple if-else conditions for better readability.
