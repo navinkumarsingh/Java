@@ -1,0 +1,70 @@
+Key Notes on Scanner Class and Methods Used in the Programs
+===========================================================
+
+The Scanner class in Java is part of the `java.util` package and is used to read input from various sources like the keyboard (System input), files, and streams. In the programs above, we utilized the Scanner class to take user input in different formats. Below is a detailed explanation of the methods used.
+
+------------------------------------------------------------
+1️⃣ Importing the Scanner Class
+------------------------------------------------------------
+```java
+import java.util.Scanner;
+The Scanner class is located in the java.util package.
+It must be imported before use.
+2️⃣ Creating a Scanner Object
+
+Scanner sc = new Scanner(System.in);
+Creates an instance of the Scanner class.
+System.in represents standard input (keyboard).
+Allows capturing user input from the console.
+3️⃣ Using nextInt() Method
+
+int num = sc.nextInt();
+Reads an integer value from the user.
+Input must be a valid integer; otherwise, it throws InputMismatchException.
+✅ Example:
+
+Input:  25
+Output: num = 25
+4️⃣ Using nextFloat() Method
+
+float age = sc.nextFloat();
+Reads a floating-point number from the user.
+Useful when dealing with decimal values.
+Throws InputMismatchException if the input is not a valid float.
+✅ Example:
+
+Input:  16.5
+Output: age = 16.5
+5️⃣ Using nextLine() Method
+
+String text = sc.nextLine();
+Reads the entire line of text input (including spaces).
+Unlike next(), which reads only a single word, nextLine() reads everything until the user presses Enter.
+✅ Example:
+
+Input:  Hello World!
+Output: text = "Hello World!"
+⚠️ Note: When nextLine() is used after nextInt() or nextFloat(), it may consume the newline character left in the buffer. To avoid this, use an extra nextLine() before reading the actual input.
+
+6️⃣ Using Regular Expressions (matches()) for Input Validation
+The matches() method checks if the input string follows a specific pattern.
+
+num.matches("[01]+");       // Binary (only 0s and 1s)
+num.matches("[0-7]+");      // Octal (digits 0-7)
+num.matches("^[0-9]+$");    // Decimal (digits 0-9)
+num.matches("[0-9A-Fa-f]+"); // Hexadecimal (digits 0-9, A-F)
+✅ Example:
+
+Input:  1010
+Output: Valid Binary Number
+7️⃣ Closing the Scanner Object
+
+sc.close();
+Closes the Scanner object to free up system resources.
+It is a good practice to close the Scanner object once input is no longer needed.
+After closing, any attempt to read input using the same Scanner object will throw IllegalStateException.
+✅ Best Practices When Using Scanner
+✔ Always close the Scanner object after use to avoid resource leaks.
+✔ Use nextLine() carefully when mixed with nextInt() or nextFloat() to handle newline issues.
+✔ Handle exceptions like InputMismatchException when taking numerical input to prevent crashes.
+✔ Use matches() with regex to validate input formats and prevent invalid data entry.

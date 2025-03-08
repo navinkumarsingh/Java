@@ -1,0 +1,223 @@
+Detailed Explanation for All Programs
+
+1️⃣ Identifying Positive or Negative Number
+--------------------------------------------------
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Used to take integer input from the user.
+- sc.nextInt(); → Reads an integer value.
+
+Condition Used:
+- if (num >= 0) → The number is positive (including zero).
+- else → The number is negative.
+
+Key Learning:
+- The >= operator ensures that zero is treated as positive.
+
+Edge Cases:
+- 0 is considered positive in this logic.
+- Works for both positive and negative numbers.
+
+Example Cases:
+- Input: 5 → Output: Positive.
+- Input: -3 → Output: Negative.
+- Input: 0 → Output: Positive.
+
+Closing the Scanner:
+- sc.close(); → Closes the scanner to avoid memory leaks.
+
+--------------------------------------------------
+2️⃣ Finding the Maximum of Three Numbers
+--------------------------------------------------
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Used to take three integer inputs.
+
+Condition Used:
+- if (a > b && a > c) → a is the greatest.
+- else if (b > c) → b is the greatest.
+- else → c is the greatest.
+
+Key Learning:
+- The && (AND operator) helps compare multiple conditions.
+- The program does not handle equal numbers (can be improved).
+
+Example Cases:
+- Input: a = 10, b = 5, c = 8 → Output: 10 is greatest.
+- Input: a = 3, b = 7, c = 1 → Output: 7 is greatest.
+- Input: a = 6, b = 6, c = 6 → Output: 6 is greatest.
+
+Closing the Scanner:
+- sc.close(); → Closes the scanner to avoid memory leaks.
+
+--------------------------------------------------
+3️⃣ Checking if a Number is Even or Odd
+--------------------------------------------------
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Takes an integer input.
+
+Condition Used:
+- if (num % 2 == 0) → The number is Even.
+- else → The number is Odd.
+
+Key Learning:
+- The % (modulus operator) helps check divisibility by 2.
+
+Edge Cases:
+- Negative numbers also follow the same rule.
+- 0 is even because 0 % 2 == 0.
+
+Example Cases:
+- Input: 8 → Output: Even.
+- Input: 13 → Output: Odd.
+- Input: -4 → Output: Even.
+
+Closing the Scanner:
+- sc.close(); → Closes the scanner to avoid memory leaks.
+
+--------------------------------------------------
+4️⃣ Checking If a Person Is Young
+--------------------------------------------------
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Takes a floating-point input for the age.
+
+Age Classification Conditions:
+- age >= 16 && age <= 55 → The person is considered young.
+- Else → The person is not considered young.
+
+Key Learning:
+- Scanner class helps in taking user input.
+- Comparison operators (>=, <=) check numerical conditions.
+- Logical AND (&&) ensures both conditions are met together.
+- Using float type allows for decimal inputs like 16.5 or 55.2.
+
+Edge Cases Handled:
+✅ Young Category (16 to 55 inclusive):
+- Input: 16.0 → Output: "You are young!"
+- Input: 30.5 → Output: "You are young!"
+- Input: 55.0 → Output: "You are young!"
+
+❌ Not Considered Young:
+- Input: 15.9 → Output: "You are not considered young." (below 16)
+- Input: 56.1 → Output: "You are not considered young." (above 55)
+- Input: 100 → Output: "You are not considered young."
+
+Closing the Scanner:
+- sc.close(); → Closes the scanner to prevent resource leaks.
+
+--------------------------------------------------
+5️⃣ Finding Grade Based on Marks
+--------------------------------------------------
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Takes marks as input.
+
+Logic Used:
+- Calculate average = (m1 + m2 + m3) / 3.
+- Check grade based on range conditions:
+  - > 70 → Grade A
+  - 60-69 → Grade B
+  - 50-59 → Grade C
+  - 40-49 → Grade D
+  - < 40 → FAIL
+
+Key Learning:
+- && operator is used to check range-based conditions.
+- Casting (float) is needed to prevent integer division issues.
+
+Example Cases:
+- Input: Marks = 85 → Output: Grade A.
+- Input: Marks = 62 → Output: Grade B.
+- Input: Marks = 35 → Output: FAIL.
+
+Closing the Scanner:
+- sc.close(); → Closes the scanner to avoid memory leaks.
+
+--------------------------------------------------
+6️⃣ Identifying the Radix (Base) of a Number
+--------------------------------------------------
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Takes a string input for number checking.
+
+Condition Used (Regex Matching):
+- [01]+ → Binary (Base 2) → Digits allowed: 0, 1.
+- [0-7]+ → Octal (Base 8) → Digits allowed: 0-7.
+- [0-9]+ → Decimal (Base 10) → Digits allowed: 0-9.
+- [0-9A-Fa-f]+ → Hexadecimal (Base 16) → Digits: 0-9, A-F/a-f.
+
+Key Learning:
+- Regex (matches()) is useful for pattern-based conditions.
+- Different numbering systems follow specific digit constraints.
+
+Example Cases:
+- Input: "1010" → Output: Binary.
+- Input: "745" → Output: Octal.
+- Input: "9876" → Output: Decimal.
+- Input: "A1B3" → Output: Hexadecimal.
+
+Closing the Scanner:
+- sc.close(); → Closes the scanner to avoid memory leaks.
+
+--------------------------------------------------
+7️⃣ Checking If a Year Is a Leap Year
+--------------------------------------------------
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Takes an integer input for the year.
+
+Leap Year Conditions:
+- Divisible by 4 → It may be a leap year.
+- Divisible by 100 → It must also be divisible by 400 to be a leap year.
+- Divisible by 400 → It is a leap year.
+
+Key Learning:
+- % (modulus operator) helps determine divisibility.
+- Nested if-else conditions help check multiple dependent conditions.
+
+Edge Cases Handled:
+✅ Leap Years:
+- 1600, 2000, 2020, 2024 (divisible by 400 or by 4 but not 100).
+
+❌ Not Leap Years:
+- 1700, 1800, 1900, 2100 (divisible by 100 but not by 400).
+
+🔹 Normal Years:
+- 2017, 2018, 2019, 2021 (not divisible by 4).
+
+Closing the Scanner:
+- sc.close(); → Closes the scanner to avoid memory leaks.
+
+--------------------------------------------------
+8️⃣ Day Of Week Using If Else
+--------------------------------------------------
+
+Scanner Class for User Input:
+- Scanner sc = new Scanner(System.in); → Creates a Scanner object to take input from the user.
+- sc.nextInt(); → Reads an integer value entered by the user.
+
+Condition Used:
+- if(num == 1) → Sunday
+- else if(num == 2) → Monday
+- else if(num == 3) → Tuesday
+- else if(num == 4) → Wednesday
+- else if(num == 5) → Thursday
+- else if(num == 6) → Friday
+- else if(num == 7) → Saturday
+- else → Not a valid number (handles cases where input is outside 1-7)
+
+Key Learning:
+- The program maps numbers (1-7) to days of the week using if-else conditions.
+- If a number outside this range is entered, it prints "Not a valid number".
+
+Edge Cases:
+- If the user enters 0 or 8, it correctly identifies them as invalid.
+- The program does not handle fractional inputs (e.g., 2.5) since nextInt() only accepts integers.
+
+Example Cases:
+- Input: 1 → Output: Sunday
+- Input: 3 → Output: Tuesday
+- Input: 7 → Output: Saturday
+- Input: 8 → Output: Not a valid number
+- Input: 0 → Output: Not a valid number
+
+Closing the Scanner:
+- sc.close(); → Closes the Scanner object to prevent memory leaks.
+
+Alternative Approach:
+- Using a switch statement instead of multiple if-else conditions would improve readability and efficiency.

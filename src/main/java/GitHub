@@ -1,0 +1,16 @@
+In IntelliJ IDEA, when you are using Git with GitHub, files in the project directory are color-coded based on their status in the Version Control System (VCS). Here's what each color means:
+1️⃣ Green File (New File - Unversioned)
+This means the file is newly created and has been added to Git but not committed yet.
+The file is tracked by Git but is waiting to be committed.
+Action Required: You need to commit the file.
+2️⃣ White File (Unchanged - Committed)
+The file is already committed and does not have any new changes.
+It is in sync with the latest version in the repository.
+No action required.
+3️⃣ Blue File (Modified - Changed)
+This file has been modified after the last commit.
+It has changes that are not yet staged or committed.
+Action Required: You can commit or discard changes.
+Other File Colors in IntelliJ Git Integration:
+Gray: Ignored by Git (.gitignore file).
+Red: The file is untracked and not added to Git yet (git add needed).
