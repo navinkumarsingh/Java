@@ -6,16 +6,17 @@ The Scanner class in Java is part of the `java.util` package and is used to read
 ------------------------------------------------------------
 1️⃣ Importing the Scanner Class
 ------------------------------------------------------------
-```java
 import java.util.Scanner;
 The Scanner class is located in the java.util package.
 It must be imported before use.
+
 2️⃣ Creating a Scanner Object
 
 Scanner sc = new Scanner(System.in);
 Creates an instance of the Scanner class.
 System.in represents standard input (keyboard).
 Allows capturing user input from the console.
+
 3️⃣ Using nextInt() Method
 
 int num = sc.nextInt();
@@ -25,6 +26,7 @@ Input must be a valid integer; otherwise, it throws InputMismatchException.
 
 Input:  25
 Output: num = 25
+
 4️⃣ Using nextFloat() Method
 
 float age = sc.nextFloat();
@@ -35,6 +37,7 @@ Throws InputMismatchException if the input is not a valid float.
 
 Input:  16.5
 Output: age = 16.5
+
 5️⃣ Using nextLine() Method
 
 String text = sc.nextLine();
@@ -47,6 +50,7 @@ Output: text = "Hello World!"
 ⚠️ Note: When nextLine() is used after nextInt() or nextFloat(), it may consume the newline character left in the buffer. To avoid this, use an extra nextLine() before reading the actual input.
 
 6️⃣ Using Regular Expressions (matches()) for Input Validation
+
 The matches() method checks if the input string follows a specific pattern.
 
 num.matches("[01]+");       // Binary (only 0s and 1s)
@@ -57,6 +61,7 @@ num.matches("[0-9A-Fa-f]+"); // Hexadecimal (digits 0-9, A-F)
 
 Input:  1010
 Output: Valid Binary Number
+
 7️⃣ Closing the Scanner Object
 
 sc.close();

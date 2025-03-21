@@ -22,7 +22,9 @@ if (age >= 18) {
     System.out.println("You are eligible to vote.");
 }
 
+------------------------------------------------------------
 2️⃣ if-else Statement
+------------------------------------------------------------
 Used when we want to execute one block of code if the condition is true and another block if the condition is
 false.
 
@@ -45,7 +47,9 @@ if (num % 2 == 0) {
     System.out.println("Odd number");
 }
 
+------------------------------------------------------------
 3️⃣ if-else-if Ladder
+------------------------------------------------------------
 Used when there are multiple conditions to check.
 
 🔹 Syntax:
@@ -69,7 +73,9 @@ if (marks >= 90) {
 } else {
     System.out.println("Grade: D");
 }
+------------------------------------------------------------
 4️⃣ Nested if Statement
+------------------------------------------------------------
 An if statement inside another if statement.
 
 🔹 Syntax:
@@ -93,7 +99,10 @@ if (age >= 18) {
     System.out.println("You are not old enough.");
 }
 
+------------------------------------------------------------
 5️⃣ switch Statement
+------------------------------------------------------------
+
 Used when there are multiple possible values for a variable. More efficient than multiple if-else conditions
 when dealing with fixed values.
 
@@ -125,7 +134,8 @@ switch (day) {
     default:
         System.out.println("Invalid day");
 }
-⚠️ Important Notes on switch Statement: ✔ Use break to prevent fall-through to the next case.
+⚠️ Important Notes on switch Statement:
+✔ Use break to prevent fall-through to the next case.
 ✔ The default case executes if none of the cases match.
 ✔ The switch statement works with int, char, String, and enum types.
 
@@ -135,5 +145,5 @@ switch (day) {
 ✔ Optimize conditions by placing the most frequent ones first in an if-else ladder.
 ✔ Use logical operators (&&, ||, !) to simplify conditions.
 
-By understanding and following these key points, you can write efficient and readable Java programs using
+By understanding and following these key points, we can write efficient and readable Java programs using
 conditional statements!
