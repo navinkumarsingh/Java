@@ -2,7 +2,7 @@ package ex4_ConditionalStatements;
 
 import java.util.Scanner;
 
-public class MenuDrivenArithmeticSwitchCase {
+public class EX15_MenuDrivenArithmeticSwitchCase {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
