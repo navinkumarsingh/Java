@@ -6,21 +6,18 @@ public class EX15_MenuDrivenArithmeticSwitchCase {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Display menu options
-        System.out.println("Menu");
-        System.out.println("====");
-        System.out.println("ADD");
-        System.out.println("SUB");
-        System.out.println("MUL");
-        System.out.println("DIV");
+        // Display the arithmetic operation menu to the user
+        // "\n" is used to move to the next line for better formatting
+        System.out.println("Menu\n====");
+        System.out.println("ADD\nSUB\nMUL\nDIV\nMOD"); // List of available operations
 
         // Prompt user for first number
-        System.out.println("Enter first number");
-        int x = sc.nextInt(); // Reads the first number but does NOT consume the newline character (\n)
+        System.out.println("Enter first number:");
+        double x = sc.nextDouble();  // Use nextDouble() instead of nextInt()
 
         // Prompt user for second number
-        System.out.println("Enter second number");
-        int y = sc.nextInt(); // Reads the second number but again leaves a newline character (\n) in the buffer
+        System.out.println("Enter second number:");
+        double y = sc.nextDouble();  // Use nextDouble() instead of nextInt()
 
         sc.nextLine(); // **Important Fix:** Clears the leftover newline (\n) from buffer after reading integers
 
@@ -45,6 +42,14 @@ public class EX15_MenuDrivenArithmeticSwitchCase {
                     System.out.println("Division is :" + (x / y));
                 } else {
                     System.out.println("Error: Division by zero is not allowed");
+                }
+                break;
+            case "MOD":
+                // Ensure division by zero is handled properly
+                if (y != 0) {
+                    System.out.println("Modulus (x % y) is: " + (x % y));
+                } else {
+                    System.out.println("Error: Modulus by zero is not allowed");
                 }
                 break;
             default:

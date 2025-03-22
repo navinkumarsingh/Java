@@ -1,0 +1,15 @@
+Loops: Loops are meant for repeating the set of statements. There are 4 types of loop in java.
+ 1. while loop
+ 2. do while loop
+ 3. for loop
+ 4. for each loop
+
+ In this section we will learn about first 3 loops. And 4th type of loop we will learn while using collection.
+ As for each loop/enhanced for loop is related to collection.
+
+ Ex:
+ 1. If we have to find out GCD of some numbers then we have to go on subtracting the numbers.
+ 2. If I am finding LCM of some numbers, then I have to go on dividing the numbers with common factors,
+ so it is not one step, we have to repeatedly do it more than one times. So, we have to do the similar
+ work repeatedly more than one times. So, if when we have to do similar work repeatedly, then that we
+ can put in the form of a loop.
