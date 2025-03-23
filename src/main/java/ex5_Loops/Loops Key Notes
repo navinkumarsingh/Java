@@ -1,15 +1,263 @@
 Loops: Loops are meant for repeating the set of statements. There are 4 types of loop in java.
- 1. while loop
- 2. do while loop
- 3. for loop
- 4. for each loop
+ 1. while loop : As long as some condition is true
+ 2. do while loop : As long as some condition is true
+ 3. for loop : when we know number of times, for loop we need to use
 
- In this section we will learn about first 3 loops. And 4th type of loop we will learn while using collection.
- As for each loop/enhanced for loop is related to collection.
+Note: Whenever we're using any 3 type of looping statement three things are important.
+1. initialization:  Where we have to start
+2. condition: How many times we have to repeat
+3. increment/decrement: How much value we have to increase/decrease
 
- Ex:
+1. While Loop in Java
+The while loop checks the condition before executing the loop body.
+If the condition is false initially, the loop won't execute.
+
+Syntax: while loop:
+................................
+while (condition) {
+    // Loop body (executed if condition is true)
+    increment/decrement statement;
+}
+
+Example: Print even numbers from 2 to 10
+public class WhileLoopExample {
+    public static void main(String[] args) {
+        int num = 2;
+        while (num <= 10) {  // Condition checked first
+            System.out.print(num + " ");
+            num += 2;
+        }
+    }
+}
+Output:
+2 4 6 8 10
+
+Explanation:
+1. int num = 2;
+Initializes num with 2, which is the first even number.
+2. while (num <= 10) {
+The loop continues executing as long as num is less than or equal to 10.
+If num becomes greater than 10, the loop stops.
+3. System.out.print(num + " ");
+Prints the current value of num followed by a space (on the same line).
+4. num += 2;
+Increases num by 2 to move to the next even number.
+Explanation:
+num += 2; → ✅ Correct (Shorthand for num = num + 2;)
+num=+2; → ❌ Incorrect (This just assigns +2 to num, not increments it.)
+Output:
+2 4 6 8 10
+
+Syntax: do while loop
+................................
+do {
+    // Loop body (executes at least once)
+    increment/decrement statement;
+} while (condition);
+
+Syntax: for loop
+................................
+for (initialization; condition; increment/decrement) {
+    // Loop body (executes while condition is true)
+}
+
+Note: Here initialization happen only once. And then condition, body execution and update continue till the time
+we meet the condition.
+
+4. for each loop/enhanced for loop: 4th type of loop we will learn while using collection.
+As for each loop/enhanced for loop is related to collection.
+
+In this section we will learn about first 3 loops.
+Ex:
  1. If we have to find out GCD of some numbers then we have to go on subtracting the numbers.
  2. If I am finding LCM of some numbers, then I have to go on dividing the numbers with common factors,
  so it is not one step, we have to repeatedly do it more than one times. So, we have to do the similar
  work repeatedly more than one times. So, if when we have to do similar work repeatedly, then that we
  can put in the form of a loop.
+
+
+3. Difference Between While and Do-While in Java:
+
+Feature                 While Loop                                 	Do-While Loop
+1. Condition Checking	Before executing the loop body	            After executing the loop body
+2. Execution	        May not execute if the condition            Executes at least once, even if the
+                        is false initially                          condition is false
+3. Best Use Case	    When it's possible that the loop might      When we want the loop to execute at
+                        not need to run at all                      least once
+
+Example Showing the Difference:
+public class WhileVsDoWhile {
+    public static void main(String[] args) {
+        int x = 10;
+
+        // While loop: Condition is false, so it won't execute
+        System.out.println("While Loop:");
+        while (x < 5) {
+            System.out.println("This won't print!");
+        }
+
+        // Do-while loop: Executes at least once
+        System.out.println("Do-While Loop:");
+        do {
+            System.out.println("This will print once!");
+        } while (x < 5);
+    }
+}
+
+Output:
+While Loop:
+Do-While Loop:
+This will print once!
+
+4. Infinite Loops in Java
+An infinite loop is a loop that never terminates because its condition always evaluates to true. Infinite loops can occur in while, do-while, and for loops.
+
+a. Infinite While Loop
+The condition is always true, so the loop never stops.
+
+public class InfiniteWhileLoop {
+    public static void main(String[] args) {
+        while (true) {  // Always true
+            System.out.println("This is an infinite loop");
+        }
+    }
+}
+Output: (Keeps printing forever)
+This is an infinite loop
+This is an infinite loop
+...
+🔹 How to stop it?
+
+Press Ctrl + C in the terminal.
+Use break; inside the loop when needed.
+
+2. Infinite Do-While Loop
+Since true is always true, the loop keeps running.
+
+public class InfiniteDoWhileLoop {
+    public static void main(String[] args) {
+        do {
+            System.out.println("Running forever...");
+        } while (true);  // Always true
+    }
+}
+Output: (Keeps printing forever)
+Running forever...
+Running forever...
+...
+
+3. Infinite For Loop
+The loop has no condition or stopping criteria.
+public class InfiniteForLoop {
+    public static void main(String[] args) {
+        for (;;) {  // No condition means it runs forever
+            System.out.println("This loop will never end");
+        }
+    }
+}
+Output: (Keeps printing forever)
+This loop will never end
+This loop will never end
+...
+
+Breaking an Infinite Loop
+To prevent an infinite loop from running forever, we can use the break; statement.
+public class BreakInfiniteLoop {
+    public static void main(String[] args) {
+        int i = 1;
+        while (true) {
+            System.out.println("Loop iteration: " + i);
+            if (i == 5) {
+                break;  // Stops when i reaches 5
+            }
+            i++;
+        }
+    }
+}
+Output:
+Loop iteration: 1
+Loop iteration: 2
+Loop iteration: 3
+Loop iteration: 4
+Loop iteration: 5
+
+Here are different ways to write an infinite for loop in Java:
+
+1. Classic Infinite for Loop
+
+for (;;) {
+    System.out.println("This is an infinite loop");
+}
+🔹 Why?
+No initialization, condition, or update → Loop never stops.
+
+2. Using true as the Condition
+
+for (; true ;) {
+    System.out.println("This is an infinite loop");
+}
+🔹 Why?
+true is always true, so the loop never exits.
+
+3. Using a Constant Boolean Variable
+
+final boolean RUN = true;
+for (; RUN ;) {
+    System.out.println("This is an infinite loop");
+}
+🔹 Why?
+Since RUN is true, the condition never fails.
+
+4. Using a Non-Decrementing Variable
+
+for (int i = 1; i > 0; i++) {
+    System.out.println("This is an infinite loop");
+}
+🔹 Why?
+i keeps increasing, so i > 0 is always true.
+
+5. Using a Non-Incrementing Variable
+
+for (int i = 1; i <= 5; ) {
+    System.out.println("This is an infinite loop");
+}
+🔹 Why?
+i is never incremented, so i <= 5 never changes.
+
+6. Using a break Condition That Never Executes
+
+for (int i = 0; i < 10; i--) {  // i decreases, never reaches 10
+    System.out.println("This is an infinite loop");
+}
+🔹 Why?
+i is decreasing (i--), so it never reaches 10.
+
+7. Using continue Without an Exit Condition
+
+for (int i = 0; i < 5; ) {
+    System.out.println("This is an infinite loop");
+    continue;  // Skips the next part, no update on i
+}
+🔹 Why?
+continue skips i++, so i is never updated.
+
+8. Using a Method That Always Returns true
+
+for (; alwaysTrue(); ) {
+    System.out.println("This is an infinite loop");
+}
+
+static boolean alwaysTrue() {
+    return true;
+}
+🔹 Why?
+
+alwaysTrue() always returns true, making the loop infinite.
+Stopping an Infinite Loop
+Use break to exit:
+
+for (;;) {
+    System.out.println("Running...");
+    if (Math.random() > 0.9) break;  // Breaks randomly
+}
+These are different ways to create infinite for loops in Java.
