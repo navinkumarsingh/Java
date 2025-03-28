@@ -8,6 +8,14 @@ Note: Whenever we're using any 3 type of looping statement three things are impo
 2. condition: How many times we have to repeat
 3. increment/decrement: How much value we have to increase/decrease
 
+*******************Which loop is preferred to use******************
+1. for loop: If you know the number of iterations in advance, the for loop is often the most suitable.
+2. If we want to execute the loop at least once, the do-while loop is appropriate.
+3. If you are uncertain about the number of iterations and the loop termination is based on a condition, the while
+loop is a good choice.
+
+
+
 1. While Loop in Java
 The while loop checks the condition before executing the loop body.
 If the condition is false initially, the loop won't execute.
