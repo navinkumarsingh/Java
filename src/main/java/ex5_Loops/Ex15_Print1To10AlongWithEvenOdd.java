@@ -1,8 +1,9 @@
 package ex5_Loops; // Package name (used to organize classes, not mandatory for basic programs)
 
+import java.util.Scanner;
+
 public class Ex15_Print1To10AlongWithEvenOdd { // Class definition
     public static void main(String[] args) { // Main method - program execution starts here
-
         // A 'for' loop that starts from i = 1 and runs until i <= 10
         for (int i = 1; i <= 10; i++) {
 

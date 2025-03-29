@@ -16,6 +16,7 @@ loop is a good choice.
 
 
 
+
 1. While Loop in Java
 The while loop checks the condition before executing the loop body.
 If the condition is false initially, the loop won't execute.

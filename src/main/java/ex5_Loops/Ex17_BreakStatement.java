@@ -6,7 +6,7 @@ public class Ex17_BreakStatement { // Class definition
         // A 'for' loop that starts from i = 0 and runs until i <= 10
         for(int i = 1; i <= 10; i++) {
 
-            // If i reaches 5, the break statement stops the loop immediately
+            //Based on the condition, i.e. If i reaches 5, the break statement stops the loop immediately
             if(i == 5) {
                 break; // Exits the loop
             }
