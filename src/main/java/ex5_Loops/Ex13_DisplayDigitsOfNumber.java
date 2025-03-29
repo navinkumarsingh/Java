@@ -74,5 +74,32 @@ Why is the loop not running indefinitely?
 
 Because n reduces after each iteration, and when n becomes 0, the loop stops.
 
+int r = 1%10?
+
+ChatGPT said:
+The expression 1 % 10 performs the modulo operation, which gives the remainder when dividing 1 by 10.
+
+In this case:
+
+1 ÷ 10 results in 0 with a remainder of 1.
+
+So, the result of 1 % 10 is 1.
+
+Thus, int r = 1 % 10; will assign the value 1 to r.
+
+More Explanation:
+n=1/10?
+
+The expression n = 1 / 10 in most programming languages will perform integer division if both operands are integers.
+In Java, for example, both 1 and 10 are integers, so the result of 1 / 10 will be 0 because the fractional part is discarded.
+However, if you want a result that includes the fractional part (i.e., 0.1), you need to make sure that one or both of the numbers are treated as floating-point numbers. You can do this by casting one of the operands to double or float.
+
+For example:
+n = 1.0 / 10 or n = 1 / 10.0 will give 0.1.
+
+Example in Java:
+int n = 1 / 10;      // n will be 0 because it's integer division
+double n = 1.0 / 10; // n will be 0.1 because it's floating-point division
+So, if n = 1 / 10, and both are integers, the result will be 0.
 
  */
