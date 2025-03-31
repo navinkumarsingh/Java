@@ -1,0 +1,127 @@
+Arrays in Java
+In Java, data types are categorized into Primitive Data Types and Derived Data Types.
+
+Primitive Data Types: Store a single value in a variable (e.g., int, char, float, boolean).
+Derived Data Types: Allow multiple values to be stored in a single variable. Arrays are a prime example of derived data types.
+What is an Array?
+An array is a collection of elements of the same data type (homogeneous data). Unlike variables that store only one value at a time, arrays allow storing multiple values in a single variable.
+
+Types of Arrays in Java
+Single-Dimensional Array
+Multi-Dimensional Array (e.g., Two-Dimensional Array)
+Single-Dimensional Arrays
+A single-dimensional array stores a list of values of the same type.
+
+*Operations on Arrays
+1. Declaring an array
+2. Assigning values to an array
+3. Finding the size of an array
+4. Reading a single value from an array
+5. Reading multiple values from an array
+
+*Declaring and Initializing Arrays
+Approach 1: Fixed Size Array (Static Allocation)
+If the number of elements is known in advance and does not change, a fixed-size array can be used.
+
+// Declare an array of size 5
+int arr[] = new int[5];
+
+// Assign values to the array
+arr[0] = 100;
+arr[1] = 200;
+arr[2] = 300;
+arr[3] = 400;
+arr[4] = 500;
+Approach 2: Direct Initialization (Dynamic Allocation)
+If the number of elements is unknown or may change in the future, we can use direct initialization. This approach is more flexible.
+
+
+// Declare and initialize an array in a single step
+int arr[] = {100, 200, 300, 400, 500};
+✅ Approach 2 is preferred as it is more readable and does not require specifying the array size explicitly.
+
+Understanding Array Indexing
+Every element in an array is assigned an index starting from 0.
+
+If an array has n elements, the last index will be n-1.
+
+Example: In an array {100, 200, 300, 400, 500}, the indices are:
+
+arr[0] = 100
+arr[1] = 200
+arr[2] = 300
+arr[3] = 400
+arr[4] = 500
+Working with Arrays
+1. Finding the Length of an Array
+The length property provides the number of elements in an array.
+
+
+System.out.println("Length of the array: " + arr.length);
+2. Accessing a Specific Element
+To retrieve a value at a particular index, use:
+
+System.out.println("Element at index 4: " + arr[4]); // Output: 500
+3. Iterating Over an Array
+a) Using a Traditional For Loop
+Using a for loop to iterate through all elements:
+
+for(int i = 0; i < arr.length; i++) {
+    System.out.print(arr[i] + " ");
+}
+✅ Using i < arr.length instead of i <= arr.length - 1 makes the loop more readable.
+
+b) Using an Enhanced For Loop (For-Each Loop)
+Java provides an enhanced for loop (for-each loop) to iterate over arrays in a simpler way:
+
+for (int num : arr) {
+    System.out.print(num + " ");
+}
+🔹 Advantages of Enhanced For Loop:
+✔ No need to manage the index manually.
+✔ More readable and reduces errors.
+✔ Best for simply accessing array elements (but cannot modify elements).
+
+Complete Java Program: Single-Dimensional Array
+
+package ex10_Arrays;
+
+public class Ex1_SingleDimensionalArray {
+    public static void main(String[] args) {
+        // Declare and initialize an array
+        int arr[] = {100, 200, 300, 400, 500};
+
+        // Find the length of the array
+        System.out.println("Length of the array: " + arr.length);
+
+        // Access a specific value using an index
+        System.out.println("Element at index 4: " + arr[4]);
+
+        // Iterate using a traditional for loop
+        System.out.print("Array elements (for loop): ");
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println(); // New line for formatting
+
+        // Iterate using an enhanced for loop
+        System.out.print("Array elements (for-each loop): ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
+Key Points to Remember
+✅ Arrays store multiple values of the same data type in a single variable.
+✅ Array indices start from 0 and go up to n-1.
+✅ The length of an array is accessed using arr.length.
+✅ Use a traditional for loop if you need the index, and an enhanced for loop if you just need to access values.
+✅ Accessing an out-of-bound index will throw an ArrayIndexOutOfBoundsException.
+
+Example of an error:
+
+int arr[] = new int[0]; // Empty array
+System.out.println(arr[4]); // Throws ArrayIndexOutOfBoundsException
+
+

@@ -1,0 +1,106 @@
+Two Dimensional/Multi Dimensional Array:
+
+*Major difference: In Single Dimensional array we have only rows and two dimensional/multi dimensional array we have rows
+as well as columns.
+
+*Operations on Arrays
+1. Declaring an array
+2. Assigning values to an array
+3. Finding the size of an array
+4. Reading a single value from an array
+5. Reading multiple values from an array
+
+1. Declaring an two dimensional/multi dimensional array
+1️⃣ Single-Dimensional Array (1D) → A Single Row
+A 1D array is like a single row of boxes where each box stores a value.
+
+🔹 Example: List of Marks
+Index (Position)	0	1	2	3	4
+Values (Marks)	   10	20	30	40	50
+Java Code for 1D Array:
+
+public class OneDArray {
+    public static void main(String[] args) {
+        int[] marks = {10, 20, 30, 40, 50};  // A single row
+
+        // Access elements
+        System.out.println(marks[0]);  // Output: 10
+        System.out.println(marks[2]);  // Output: 30
+    }
+}
+
+✅ Key Takeaways:
+Only one row (single direction).
+Access elements using one index → array[index].
+
+2️⃣ Two-Dimensional Array (2D) → A Table (Rows & Columns)
+A 2D array is like a table with rows and columns.
+
+🔹 Example: Student Marks Table
+Row / Column	0	1	2
+0 (Row 0)	    1	2	3
+1 (Row 1)	    4	5	6
+2 (Row 2)	    7	8	9
+
+Java Code for 2D Array:
+public class TwoDArray {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},   // Row 0
+            {4, 5, 6},   // Row 1
+            {7, 8, 9}    // Row 2
+        };
+
+        // Accessing elements (row, column)
+        System.out.println(matrix[0][1]);  // Output: 2 (Row 0, Column 1)
+        System.out.println(matrix[2][2]);  // Output: 9 (Row 2, Column 2)
+    }
+}
+✅ Key Takeaways:
+
+Rows and columns (like an Excel sheet).
+Access elements using two indexes → array[row][column].
+
+3️⃣ Three-Dimensional Array (3D) → Stacked Tables
+A 3D array is like multiple tables stacked on top of each other.
+
+🔹 Example: A Stack of 2 Tables
+Layer 0 (First Table)
+Row / Column	0	1
+0	1	2
+1	3	4
+Layer 1 (Second Table)
+Row / Column	0	1
+0	5	6
+1	7	8
+
+Java Code for 3D Array:
+public class ThreeDArray {
+    public static void main(String[] args) {
+        int[][][] cube = {
+            { // Layer 0
+                {1, 2},
+                {3, 4}
+            },
+            { // Layer 1
+                {5, 6},
+                {7, 8}
+            }
+        };
+
+        // Accessing element at (Layer 1, Row 0, Column 1)
+        System.out.println(cube[1][0][1]);  // Output: 6
+    }
+}
+✅ Key Takeaways:
+
+Stack of tables (Layers + Rows + Columns).
+
+Access elements using three indexes → array[layer][row][column].
+
+🔹 Summary in a Simple Table
+Type	Shape	Example	How to Access
+1D Array	🔲🔲🔲🔲 (Single row)	{10, 20, 30}	arr[1]
+2D Array	📊 (Table: Rows & Columns)	{{1, 2}, {3, 4}}	arr[1][0]
+3D Array	🏗 (Stacked tables)	{{{1,2}, {3,4}}, {{5,6}, {7,8}}}	arr[1][0][1]
+

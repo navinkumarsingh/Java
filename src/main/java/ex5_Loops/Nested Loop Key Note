@@ -1,0 +1,58 @@
+A nested loop in Java refers to a loop inside another loop. The inner loop executes completely for each iteration of the outer loop. This structure is commonly used in scenarios like matrix operations, pattern printing, and solving complex algorithmic problems.
+
+Syntax of Nested Loop
+
+for (initialization; condition; increment/decrement) {
+    for (initialization; condition; increment/decrement) {
+        // Inner loop code
+    }
+    // Outer loop code
+}
+Example 1: Printing a 5x5 Pattern
+
+public class NestedLoopExample {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) { // Outer loop
+            for (int j = 1; j <= 5; j++) { // Inner loop
+                System.out.print("* ");
+            }
+            System.out.println(); // Moves to the next line
+        }
+    }
+}
+Output:
+
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+
+Example 2: Multiplication Table (Nested Loop)
+
+public class MultiplicationTable {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) { // Outer loop for row
+            for (int j = 1; j <= 5; j++) { // Inner loop for column
+                System.out.print(i * j + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
+Output:
+
+1   2   3   4   5
+2   4   6   8   10
+3   6   9   12  15
+4   8   12  16  20
+5   10  15  20  25
+
+Key Points About Nested Loops in Java
+The inner loop runs completely for each iteration of the outer loop.
+
+Used for pattern printing, matrix operations, and searching algorithms.
+
+You can nest for, while, or do-while loops inside each other.
+
+Performance can be an issue if loops are deeply nested (O(n²), O(n³), etc.).

@@ -1,0 +1,87 @@
+Enhanced For Loop (For-Each Loop) in Java:
+The Enhanced For Loop, also known as the For-Each Loop, is a simplified way to iterate through arrays and collections. It is specifically designed to loop through elements without needing to manage an index manually.
+
+Syntax of the Enhanced For Loop
+
+for (dataType variable : arrayName) {
+    // Code to execute for each element
+}
+🔹 dataType → Type of elements in the array.
+🔹 variable → A temporary variable that holds each array element during iteration.
+🔹 arrayName → The array to be traversed.
+
+Step-by-Step Execution of the Enhanced For Loop
+Let's consider an example array:
+
+int arr[] = {10, 20, 30, 40, 50};
+Now, let's iterate through this array using an enhanced for loop:
+
+for (int num : arr) {
+    System.out.println(num);
+}
+Step-by-Step Execution
+Initialization: The loop starts with num = arr[0] (first element, 10).
+Iteration 1: num = 10, prints 10.
+Iteration 2: Moves to num = arr[1] (20), prints 20.
+Iteration 3: Moves to num = arr[2] (30), prints 30.
+Iteration 4: Moves to num = arr[3] (40), prints 40.
+Iteration 5: Moves to num = arr[4] (50), prints 50.
+End of Loop: Since there are no more elements, the loop terminates.
+✅ The loop automatically moves to the next element, eliminating the need for an index variable.
+
+Example Program Using Enhanced For Loop
+package ex10_Arrays;
+
+public class EnhancedForLoopExample {
+    public static void main(String[] args) {
+        // Declare and initialize an array
+        int arr[] = {10, 20, 30, 40, 50};
+
+        // Using an enhanced for loop to iterate through the array
+        System.out.println("Array elements using Enhanced For Loop:");
+        for (int num : arr) {
+            System.out.println(num);
+        }
+    }
+}
+Output:
+Array elements using Enhanced For Loop:
+10
+20
+30
+40
+50
+Advantages of the Enhanced For Loop
+✅ No Index Management: No need to use i for indexing.
+✅ Readable Code: The syntax is cleaner and more understandable.
+✅ Prevents Errors: No risk of ArrayIndexOutOfBoundsException.
+✅ Useful for Read-Only Operations: Ideal when we don't need to modify the array.
+
+Limitations of the Enhanced For Loop
+❌ Cannot Modify Elements Directly
+Since the loop variable (num) is a copy of the actual array element, modifying num does not change the original array.
+
+🔴 Example:
+
+for (int num : arr) {
+    num = num * 2;  // This does not change the actual array
+}
+The original arr remains unchanged.
+
+✅ Solution: Use a traditional for loop if modification is required:
+
+for (int i = 0; i < arr.length; i++) {
+    arr[i] = arr[i] * 2; // Modifies original array
+}
+❌ Only Works for Arrays and Collections
+The enhanced for loop does not work for custom iteration logic (e.g., iterating in reverse).
+
+When to Use Enhanced For Loop?
+✔ When iterating through an array or collection.
+✔ When you only need to read values, not modify them.
+✔ When you want cleaner and simpler code.
+
+❌ Do not use it when modifying elements or if an index is required.
+Conclusion
+The Enhanced For Loop makes iterating through arrays simpler, cleaner, and more readable. However,
+if you need to modify elements or access indexes, use a traditional for loop.
