@@ -1,7 +1,12 @@
 package ex5_Loops; // Defines the package name (used for organizing classes)
 
 import java.util.Scanner; // Imports the Scanner class for user input
-
+//A palindrome is a word, number, phrase, or sequence that reads the same forward and backward.
+/*
+Checking for a Palindrome: To check if a string or number is a palindrome:
+Reverse it.
+Compare it with the original.
+ */
 public class Ex23_PalindromeNumber { // Class definition
     public static void main(String[] args) { // Main method - execution starts here
 
