@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex3_reverseAStringApproach2 {
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in);
-        System.out.println("Enter a A1_String");
+        System.out.println("Enter a String");
         String str = sc.nextLine();
         String strRev = "";
         char a[] = str.toCharArray();
