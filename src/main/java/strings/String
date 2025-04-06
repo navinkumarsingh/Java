@@ -10,6 +10,7 @@ String Methods            Description
 charAt()	              Get character at given index
 concat()	              Combine strings
 contains()	              Check if string contains substring
+toCharArray()             returns the Strings in character of Array
 endsWith()	              Check if string ends with specific value
 equals()	              Check exact match (case-sensitive)
 equalsIgnoreCase()	      Case-insensitive equality check

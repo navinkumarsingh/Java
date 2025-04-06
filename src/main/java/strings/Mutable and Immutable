@@ -1,0 +1,5 @@
+Mutable: If any methods operation is changing the original element or original value of the variable,
+         that is called Immutable feature. StringBuffer and String Builder is Mutable Object.
+
+Immutable: If any method operation is not changing the original element or original value of the variable,
+         that is called Immutable feature. Only String is an Immutable Object in java.
