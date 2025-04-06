@@ -1,0 +1,25 @@
+🧠 Theory for Quick Revision
+🔹 == Operator:
+Compares object references (memory locations).
+
+Returns true if both variables point to the same object.
+
+🔹 .equals() Method:
+Compares actual content/values of the objects.
+
+Returns true if the values are the same, even if objects are different.
+
+🔹 String Pool:
+Java stores string literals in a special memory area called the String Pool.
+
+If a literal already exists, it reuses the same object.
+
+But using new always creates a new object in heap memory.
+
+📘 Real-World Tip (SDET Perspective):
+When verifying UI data or API responses, always use:
+
+if (actual.equals(expected)) {
+    // Validate content
+}
+Don’t use == unless we're checking for the exact same object instance, which is rare in test automation.

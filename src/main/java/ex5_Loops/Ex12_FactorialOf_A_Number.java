@@ -35,7 +35,7 @@ Imports the Scanner class to take user input.
 public class Ex12_FactorialOf_A_Number {
 Declares a class named Ex12_FactorialOf_A_Number.
 
-public static void main(String[] args) {
+public static void main(A1_String[] args) {
 The main method where program execution begins.
 
 Scanner sc = new Scanner(System.in);

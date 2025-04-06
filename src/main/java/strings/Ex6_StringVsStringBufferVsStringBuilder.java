@@ -2,7 +2,7 @@ package strings;
 
 public class Ex6_StringVsStringBufferVsStringBuilder {
     public static void main(String[] args) {
-        //String - immutable
+        //A1_String - immutable
         String s ="welcome";
         s.concat("to java");
         System.out.println(s); //immutable, cannot change original value of s

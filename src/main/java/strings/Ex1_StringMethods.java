@@ -5,13 +5,13 @@ import java.util.Arrays;
 public class Ex1_StringMethods {
     public static void main(String[] args) {
 
-        // ----------- String Declaration -----------
+        // ----------- A1_String Declaration -----------
 
         // Approach 1 - Direct assignment
-        // String s = "Welcome";
+        // A1_String s = "Welcome";
 
         // Approach 2 - Using new keyword (less preferred for simple cases)
-        // String str = new String("Welcome");
+        // A1_String str = new A1_String("Welcome");
 
         // ----------- charAt() method -----------
         String s = "welcome";

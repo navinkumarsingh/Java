@@ -1,11 +1,11 @@
 package strings;
 
 import java.util.Scanner;
-//Approach2: By converting String to char array type
+//Approach2: By converting A1_String to char array type
 public class Ex3_reverseAStringApproach2 {
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in);
-        System.out.println("Enter a String");
+        System.out.println("Enter a A1_String");
         String str = sc.nextLine();
         String strRev = "";
         char a[] = str.toCharArray();

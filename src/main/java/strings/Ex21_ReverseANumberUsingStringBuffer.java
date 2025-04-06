@@ -17,7 +17,7 @@ public class Ex21_ReverseANumberUsingStringBuffer {
         // Reading the user input as an integer
         int num = sc.nextInt();
 
-        // Converting the integer to a String using String.valueOf()
+        // Converting the integer to a A1_String using A1_String.valueOf()
         StringBuffer sb = new StringBuffer(String.valueOf(num));
 
         // Using the reverse() method of StringBuffer to reverse the number
@@ -35,11 +35,11 @@ Taking User Input:
 
 The program asks the user to enter a number.
 It reads the input using Scanner.nextInt(), which stores it as an int.
-Converting Integer to String:
+Converting Integer to A1_String:
 
-Since StringBuffer works with String, we convert the integer to a string using String.valueOf(num).
-StringBuffer sb = new StringBuffer(String.valueOf(num)); → Converts the number to a StringBuffer object.
-Reversing the String:
+Since StringBuffer works with A1_String, we convert the integer to a string using A1_String.valueOf(num).
+StringBuffer sb = new StringBuffer(A1_String.valueOf(num)); → Converts the number to a StringBuffer object.
+Reversing the A1_String:
 
 sb.reverse(); reverses the string representation of the number.
 The reversed value is stored in revNum.

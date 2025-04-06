@@ -36,7 +36,7 @@ Imports Scanner class to take input from the user.
 public class Ex11_SumOf_N_NaturalNumber {
 Declares a public class named Ex11_SumOf_N_NaturalNumber.
 
-public static void main(String[] args) {
+public static void main(A1_String[] args) {
 The main method where program execution begins.
 
 Scanner sc = new Scanner(System.in);
