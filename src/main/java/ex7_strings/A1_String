@@ -1,0 +1,54 @@
+String (Definition): A String is a collection of characters. That are forming words or sentences or names or anything.
+ i.e. collection of characters.
+
+Simplest method for creating a String is:
+            String str1 = "Java Program";
+
+
+String Methods            Description
+
+charAt()	              Get character at given index
+concat()	              Combine ex7_strings
+contains()	              Check if string contains substring
+toCharArray()             returns the Strings in character of Array
+endsWith()	              Check if string ends with specific value
+equals()	              Check exact match (case-sensitive)
+equalsIgnoreCase()	      Case-insensitive equality check
+indexOf()	              First index of substring
+isEmpty()	              Check if string is empty
+lastIndexOf()	          Last index of substring
+length()	              Number of characters
+matches()	              Regex match
+replace()	              Replace characters or words
+split()	                  Split string into array
+startsWith()	          Check if string starts with value
+substring()	              Extract part of a string
+toLowerCase()	          Convert to lowercase
+toUpperCase()	          Convert to uppercase
+trim()	                  Remove spaces from both ends
+
+
+ It is just like if we are declaring an integer type variable:
+            int n =10;
+     String is almost similar to above one. Like,
+      int = Data Type.
+      n = variable name.
+      10 = Constant or a Literals.
+
+ So, same way
+  String is a Class Name here.
+ str1 = variable but we call it as reference.
+ variables of type Object we call it as reference.
+ "Java Program" = String Object or String Literal.
+
+ str1 is the reference holding the Object "Java Program".
+ Or str1 is having the address of the Object. "Java Program".
+
+Reference: The variable of type Class is called as Reference ans references are used of holding Objects or pointing
+upon Objects.
+
+
+
+
+
+
