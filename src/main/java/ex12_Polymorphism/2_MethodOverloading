@@ -51,3 +51,5 @@ public class Calculator {
 Sum (int): 15
 Sum of three (int): 30
 Sum (double): 6.0
+
+Q. Can we overload main method? - Yes

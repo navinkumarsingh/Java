@@ -1,0 +1,25 @@
+Encapsulation
+Encapsulation is the process of wrapping data (variables) and methods together into a single unit — and that unit is
+called a class.
+
+In simple terms, it means restricting direct access to the data and allowing it to be accessed or modified only through
+methods. This helps protect the data and ensures better control over how it is used.
+------------------------------------------------------------------------------------------------------------------------
+
+🔐 How do we achieve Encapsulation in Java?
+1. All variables should be marked as private, so they can't be accessed directly from outside the class.
+2. For each variable, we create getter and setter methods to read and modify the values.
+3. This way, the variables can only be accessed and updated through methods, not directly.
+------------------------------------------------------------------------------------------------------------------------
+
+✅ Benefits of Encapsulation:
+Improves security of data.
+Makes the class easier to manage and maintain.
+Provides controlled access to the data.
+Helps in hiding the internal implementation details from the user.
+
+Example:
+
+
+
+

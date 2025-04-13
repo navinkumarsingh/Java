@@ -1,0 +1,27 @@
+this Keyword:
+The this keyword is used to differentiate between class-level variables (instance variables) and local variables
+(like method parameters) when they have the same name.
+........................................................................................................................
+
+✅ Example:
+
+public class Student {
+    int id;
+
+    // Constructor with parameter 'id'
+    Student(int id) {
+        this.id = id; // 'this.id' refers to the class variable, 'id' refers to the parameter
+    }
+
+    void display() {
+        System.out.println("Student ID: " + this.id);
+    }
+
+    public static void main(String[] args) {
+        Student s = new Student(101);
+        s.display();
+    }
+}
+
+📌 Key Point:
+Use this when the local variable (parameter) name is the same as the instance variable, to avoid confusion and assign values properly.
