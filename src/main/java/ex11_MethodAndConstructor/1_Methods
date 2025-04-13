@@ -1,0 +1,91 @@
+Method: Method is basically a group os statements or block of code, which will perform certain task.
+
+###################################################################
+Why we need to create a method?
+-If we want to do some task repetitively and instead of writing some code again and again we will just crate a method and
+whenever we want to perform the task we can just call that method and method will perform the job.
+-Method will be created inside the class so the class is a collection of variables and methods. So, methods also part of
+ the class and whenever we create a method we can call or invoke that method through Object.
+- So, once we created the Object, through Object we can call the method and then method will perform the job. So whatever
+ logic we have written inside the method that logic will be executed only when we call that particular method.
+ - Method is for assignment and operation (i.e. variable+methods)
+
+###################################################################
+There are two kinds of methods which we have so we have a built-in method and we have an user defined methods.
+
+Built-in methods: are methods that are already provided by the Java programming language. They are part of predefined
+classes in Java's standard library, which means we don't need to write them werself—they are ready to use. If we want
+to use those method we have to just call.
+
+These predefined classes (like String, Math, System, etc.) contain many useful methods that help us perform common
+tasks such as string manipulation, mathematical calculations, input/output, and more.
+Example:
+String name = "Java";
+int length = name.length(); // length() is a built-in method of the String class
+
+User-Defined methods:
+User-defined methods are methods that we create werself to perform specific tasks in wer program. They help we organize wer code, avoid repetition, and make it easier to read and maintain.
+we define a method once and then call it whenever needed.
+
+Syntax:
+returnType methodName(parameters) {
+    // method body (code to be executed)
+}
+
+Example:
+public class Example {
+    
+    // User-defined method to add two numbers
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int sum = add(5, 3); // calling the user-defined method
+        System.out.println("Sum: " + sum);
+    }
+}
+
+######################################################################
+Categories of Methods:
+1) No params     No return value
+2) No params     Returns value
+3) Takes params  No return value
+4) Takes params  Returns value
+
+Ex:
+String s = new String("Welcome");
+//Build-in methods
+int len = s.length(); --- No params, returns value
+String sub = s.substring(2,5);     ---  Takes params, return value
+
+//User defined methods
+Refer Greetings and GreetingsMain class
+
+#########################################################################
+# How many ways we can store data into variable
+1)Using Object reference variable
+2)Using methods
+3)Using Constructor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

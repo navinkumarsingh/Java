@@ -1,0 +1,21 @@
+Difference between Method and Constructor
+...........................................
+Method:
+1) Method name can be anything
+2) Method may or may not return a value
+3) If method is not returning any value then specify void
+4) Method can take parameters/ arguments (Only this is the common point)
+5) We have to invoke/call methods explicitly through object
+6) used for specifying logic
+Constructor
+1) Constructor name should be same as class name.
+2) Constructor will never return a value (not even void)
+3) We don't specify the void
+4) Constructor can take parameters/ arguments
+5) Constructor automatically invoked at the time of object creation.
+6) used for initialize the values of the variables.
+
+Constructors:
+..............
+1)Default Constructor
+2)Parameterized Constructor

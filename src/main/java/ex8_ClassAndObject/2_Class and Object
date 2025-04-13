@@ -1,0 +1,76 @@
+OOP(Object Oriented Programming): If any language support Object Oriented Programming Concepts, we can call it as
+                                  Object Oriented Programming Language.
+There are mainly 5 concepts are there. We can call it as a Object Oriented Programming Concepts.
+1. Class 2. Object 3. polymorphism 4. Encapsulation 5. Inheritance 6. Data Abstraction
+
+Java supports all the above concepts, so java is purely Object Oriented Language.
+
+####### Class ##########
+1. Class is collection of variables and methods.
+2. Class is logical entity/blue print.
+3. Class will not occupy space in the memory.
+
+Syntax:
+class Employee
+{
+variables
+methods
+}
+
+######## Object #########
+1. Object is an instance of a class/ Object will be created by using Class.
+2. Object is physical entity.
+3. Object occupy space in memory.
+4. We can create multiple Objects for single Class.
+
+How to create an Object for the class?
+Using new keyword we have to create an Object.
+new Employee(); ->This will create a new Object.
+But once we created the Object how can we refer that Object, we need some variable. Just specifying some variable
+emp=new Employee();
+Now what is the type of the variable. Obviously Class Name type of Variable. In above case it's Employee type of
+variable.
+
+Because the class name is Employee so the variable also should be of Employee type so then only this will be able to hold
+the Object of employee.
+So the syntax of creating an Object:
+        Employee emp=new Employee();
+
+For a Single class we can create n number of Objects.
+ Employee emp1 =new Employee();
+ Employee emp2 =new Employee();
+ Employee emp3 =new Employee();
+
+Once we created a class, we can create multiple Objects based on their own class and every object will acquire their
+own copy of variables and methods from the class. Even though they have derived from the same class, they are
+independent. There is no connection between these objects. emp1 data and methods are different. emp2 data and
+methods are different. emp3 data and methods are different.
+
+Why different Objects are independent?
+Ans: Because Objects are Physical and emp1 Object will occupy different space in memory, emp2 Object will occupy different space in memory and
+so on.
+
+Most of the time we don't assign data to the variable in class. Just we create variables and methods. Because if we do
+so, the same data will be assign to all the Objects.
+ So, Once we create an Object, inside the Object we can change the value. We can add value to the variable and we can
+ implement methods also. So Variable value and method implementation can be different from one Object to another Object.
+
+######## main() ########
+1. main() can be in same class. Reference : Employee class
+2. main() can be in another class but in same package. Reference : EmployeeMain class
+3. main() can be in different package. But variables and method should be public.
+(we should import the class as import ex8_ClassAndObject.Employee; to class EmployeeMainInDifferentPackage)
+Reference:  ex10_mainMethodInDifferentPackage package, EmployeeMainInDifferentPackage class
+
+
+
+
+
+
+
+
+
+
+
+
+
