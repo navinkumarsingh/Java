@@ -1,9 +1,8 @@
 package ex8_ClassAndObject;
 
-public class Greetings
+public class Ex2_Greetings
 {
     //1) No params     No return value
-
     void m1()
     {
         System.out.println("Hello");
@@ -15,7 +14,7 @@ public class Greetings
         return "Hello how are you";
     }
 
-//3)Takes param, no return value
+    //3)Takes param, no return value
     void m3(String name)
     {
         System.out.println("Hello "+name);

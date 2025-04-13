@@ -1,14 +1,14 @@
 package ex8_ClassAndObject;
 
-public class StudentMain {
+public class Ex3_StudentMain {
     public static void main(String[] args) {
-        Student stu1=new Student();
+        Ex3_Student stu1=new Ex3_Student();
         stu1.sid=101;
         stu1.sname="smith";
         stu1.grad='A';
         stu1.printData();
 
-        Student stu2= new Student();
+        Ex3_Student stu2= new Ex3_Student();
         stu2.sid=102;
         stu2.sname="John";
         stu2.grad='A';

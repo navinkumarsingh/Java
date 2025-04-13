@@ -1,10 +1,10 @@
 package ex10_mainMethodInDifferentPackage;
-import ex8_ClassAndObject.Employee;
+import ex8_ClassAndObject.Ex1_Employee;
 
 public class EmployeeMainMethodInDifferentPackage {
         public static void main(String[] args) {
             // Creating the first object (emp1) of the Employee class using the 'new' keyword
-            Employee emp1 = new Employee();
+            Ex1_Employee emp1 = new Ex1_Employee();
 
             // Setting values to the variables of emp1
             emp1.empId = 101;            // Assign ID to emp1
@@ -18,7 +18,7 @@ public class EmployeeMainMethodInDifferentPackage {
 
 
             // Creating the second object (emp2) of the Employee class
-            Employee emp2 = new Employee();
+            Ex1_Employee emp2 = new Ex1_Employee();
 
             // Setting values to the variables of emp2
             emp2.empId = 102;            // Assign ID to emp2

@@ -2,7 +2,7 @@ package ex8_ClassAndObject; // This defines the package name. A package is used 
 
 //main() is in same class
 // This is a class named 'Employee'. A class is a blueprint for creating objects.
-public class Employee {
+public class Ex1_Employee {
 
     // These are class-level variables (also known as instance variables or data members).
     // Each object of the Employee class will have its own copy of these variables.
@@ -25,7 +25,7 @@ public class Employee {
     public static void main(String[] args) {
 
         // Creating the first object (emp1) of the Employee class using the 'new' keyword
-        Employee emp1 = new Employee();
+        Ex1_Employee emp1 = new Ex1_Employee();
 
         // Setting values to the variables of emp1
         emp1.empId = 101;            // Assign ID to emp1
@@ -39,7 +39,7 @@ public class Employee {
 
 
         // Creating the second object (emp2) of the Employee class
-        Employee emp2 = new Employee();
+        Ex1_Employee emp2 = new Ex1_Employee();
 
         // Setting values to the variables of emp2
         emp2.empId = 102;            // Assign ID to emp2

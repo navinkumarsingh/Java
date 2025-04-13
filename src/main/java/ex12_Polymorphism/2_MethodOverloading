@@ -1,0 +1,53 @@
+Method Overloading (Compile-time Polymorphism)
+
+💡 What is it?
+Method Overloading means having multiple methods with the same name in a class, but with different parameters
+(type, number, or order).
+
+How is it achieved? 4 rules are applicable for Method Overloading/Constructor Overloading:
+
+1) Method names should be same.
+2) Number of parameters should be different.
+3) Data type of parameters should be different, if number of parameters are same.
+4) Order of parameters should be different, if data type of parameters are same.
+
+❗ We cannot overload methods by just changing the return type.
+❗We will not consider variable name
+
+It allows a class to perform a similar action in different ways depending on the input.
+Since the method call is resolved during compilation, it is called Compile-time Polymorphism.
+
+✅ Why Use Method Overloading?
+1. Improves readability of code
+2. Avoids creating many different method names for similar actions
+3. Supports code reusability
+
+🧪 Example:
+public class Calculator {
+
+    // Method with 2 int parameters
+    void add(int a, int b) {
+        System.out.println("Sum (int): " + (a + b));
+    }
+
+    // Method with 3 int parameters
+    void add(int a, int b, int c) {
+        System.out.println("Sum of three (int): " + (a + b + c));
+    }
+
+    // Method with 2 double parameters
+    void add(double a, double b) {
+        System.out.println("Sum (double): " + (a + b));
+    }
+
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        calc.add(5, 10);            // Calls first method
+        calc.add(5, 10, 15);        // Calls second method
+        calc.add(2.5, 3.5);         // Calls third method
+    }
+}
+🖨️ Output:
+Sum (int): 15
+Sum of three (int): 30
+Sum (double): 6.0

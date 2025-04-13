@@ -1,10 +1,3 @@
-OOP(Object Oriented Programming): If any language support Object Oriented Programming Concepts, we can call it as
-                                  Object Oriented Programming Language.
-There are mainly 5 concepts are there. We can call it as a Object Oriented Programming Concepts.
-1. Class 2. Object 3. polymorphism 4. Encapsulation 5. Inheritance 6. Data Abstraction
-
-Java supports all the above concepts, so java is purely Object Oriented Language.
-
 ####### Class ##########
 1. Class is collection of variables and methods.
 2. Class is logical entity/blue print.
@@ -59,7 +52,7 @@ so, the same data will be assign to all the Objects.
 1. main() can be in same class. Reference : Employee class
 2. main() can be in another class but in same package. Reference : EmployeeMain class
 3. main() can be in different package. But variables and method should be public.
-(we should import the class as import ex8_ClassAndObject.Employee; to class EmployeeMainInDifferentPackage)
+(we should import the class as import ex8_ClassAndObject.Ex1_Employee; to class EmployeeMainInDifferentPackage)
 Reference:  ex10_mainMethodInDifferentPackage package, EmployeeMainInDifferentPackage class
 
 

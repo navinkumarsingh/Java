@@ -1,0 +1,31 @@
+Polymorphism
+..................
+Poly = Many
+Morphism = Forms
+
+Polymorphism means: One thing can exist or behave in many different forms.
+------------------------------------------------------------------------------------------------------------------------
+What does it mean in simple terms?
+Let’s understand with a couple of examples:
+
+1. Shape Example:
+The word Shape is a general term. There are many types of shapes:
+
+A circle is one form of a shape.
+A square is another.
+A triangle, rectangle, and others are also different forms of shapes.
+So, the concept of Shape represents many forms, which is a great example of polymorphism.
+
+2. Water Example:
+Water is a single substance, but it can exist in multiple forms:
+It can be in the form of vapour (gas)
+It can be in the form of liquid water
+It can also take the form of ice, even shaped like an ice bulb
+So again, one thing (water) can exist in many forms — another great example of polymorphism in the real world.
+------------------------------------------------------------------------------------------------------------------------
+✅ In Java, we can achieve Polymorphism mainly through:
+
+Method Overloading (Compile-time Polymorphism)
+Method Overriding (Runtime Polymorphism)
+------------------------------------------------------------------------------------------------------------------------
+
