@@ -1,0 +1,50 @@
+📘 Static Keyword in Java
+🔹 What is the static keyword?
+The static keyword in Java is used to define class-level variables and methods that can be accessed without creating
+an instance (object) of the class.
+
+🕒 When to Use Static Variables and Static Methods?
+🔸 Static Variables
+1. Shared Data Across All Instances
+Static variables are shared among all instances (objects) of a class. All objects refer to the same memory location
+for that variable.
+
+2. Common Properties for All Objects
+Useful when there's a property or value common to all objects (e.g., a counter for how many objects are created).
+
+3. Memory Efficiency
+Static variables consume less memory since they are not duplicated for each instance.
+
+🔸 Static Methods
+1. Independent of Object State
+Use static methods when the operation doesn't rely on instance (object) variables.
+
+2. Utility / Helper Methods
+Great for methods like Math.pow() or Collections.sort() where object context isn't needed.
+
+No Need to Create Object
+Can be called directly using the class name (e.g., ClassName.methodName()).
+
+🔓 Access Rules for Static and Non-Static Members
+✅ 1. Static Methods Can Access Static Stuff Directly
+Static methods can directly access:
+- Static variables
+- Other static methods, within the same class
+
+🚫 2. Static Methods Cannot Access Non-Static Members Directly
+Static methods cannot directly access:
+Non-static variables
+Non-static methods
+           ✅ But they can access them through an object.
+
+
+✅ 3. Non-Static Methods Can Access Everything Directly
+Non-static methods can access:
+Static variables
+Static methods
+Non-static variables
+Non-static methods
+
+All directly, without needing an object.
+
+💡 Tip: Always think — does this need object state? If not, consider making it static!

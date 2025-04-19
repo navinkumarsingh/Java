@@ -1,0 +1,31 @@
+public static void main(String[] args)
+The public static void main(String[] args) method is the entry point of any standalone Java
+application. Let's break down each part of this method to understand its significance:
+
+1. public
+• Access Modifier: public is an access modifier that makes the main method accessible from
+anywhere. This is necessary because the Java runtime(JVM) needs to access this method to start
+the application.
+
+2. static
+• Static Method: static means that the method belongs to the class, not instances of the class.
+This allows the Java runtime to call the main method without creating an instance of the
+class. Since main is the starting point of the program, it needs to be static so that it can be
+called by the Java Virtual Machine (JVM) without needing to instantiate the class first.
+
+3. void
+• Return Type: void indicates that the main method does not return any value. The purpose of
+main is to start the application, not to return data to the JVM.
+
+4. main
+• Method Name: main is the name of the method. This is a special method name in Java, and
+the JVM looks for this method signature as the entry point when running a Java program.
+
+5. String[] args
+• Parameter: String[] args is an array of strings that stores command-line arguments passed
+when the program is executed. If we run our Java program from the command line and
+provide additional arguments, those arguments are passed as strings in this array.
+
+• For example, if we run java MyClass arg1 arg2, then args will be an array containing ["arg1",
+"arg2"].
+• If no command-line arguments are provided, args will be an empty array

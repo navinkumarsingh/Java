@@ -11,7 +11,8 @@ public class Ex1_Account {
         Zero/0 will be returned from acc.getAccNo in Ex1_AccountMain */
         //accNo=accNo;
 
-        //So we use this keyword to differentiate class and local variable. this keyword represents class.
+        //So we use this keyword to differentiate class and local variable. The this keyword is used to refer to the
+        // current object's instance variable
         this.accNo = accNo;
     }
 

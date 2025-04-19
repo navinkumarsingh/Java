@@ -1,0 +1,48 @@
+🔸 What is a Variable in Java?
+In Java, a variable is like a container that stores data. It gives a name to a value so you can use and change that value in your program.
+
+We can think of a variable like a labeled box where you store something — like a number, a word, or even a result of a calculation.
+
+✅ Types of Variables in Java:
+1. Local Variables
+
+Declared inside a method or block
+Can be used only within that method or block
+Must be initialized before use
+
+2. Instance Variables (Non-static)
+
+Declared inside a class but outside methods
+Belong to each object (instance) of the class
+Each object has its own copy
+
+3. Static Variables (Class Variables)
+
+Declared using the keyword static
+Belong to the class itself, not individual objects
+Shared across all instances of the class
+
+🧪 Example:
+public class Car {
+    // Instance variable
+    String color;
+
+    // Static variable
+    static int wheels = 4;
+
+    void display() {
+        // Local variable
+        int speed = 60;
+        System.out.println("Color: " + color);
+        System.out.println("Speed: " + speed);
+        System.out.println("Wheels: " + wheels);
+    }
+}
+
+🧠 Remember:
+Declaration: You must declare a variable before using it.
+Example: int age = 25;
+
+Variables have a data type (like int, String, boolean, etc.)
+
+Variable names should be meaningful and follow Java naming rules.

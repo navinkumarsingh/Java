@@ -1,25 +1,31 @@
-Encapsulation
-Encapsulation is the process of wrapping data (variables) and methods together into a single unit — and that unit is
-called a class.
+Encapsulation:
+Encapsulation is a fundamental Object-Oriented Programming (OOP) concept where code and data
+are wrapped together into a single unit.
+This mechanism ensures that sensitive data is hidden from the outside world and only accessible
+through controlled methods.
+Key Points:
+1. All Variables Should Be Private:
+All the class variables should be declared as private, ensuring that they are not directly accessible from outside the
+class.
+2. Getters and Setters for Each Variable:
+For each private variable, provide two methods:
+▪ Getter Method: A method to retrieve the value of the variable.
+▪ Setter Method: A method to set or update the value of the variable.
+3. Variables Operated Only Through Methods:
+Variables should be accessed and modified only through these getter and setter
+methods, ensuring that any operation on the data is controlled and secure.
+Example Code:
+Example to demonstrate encapsulation: Ex1_Account
+Example Explained
+• Private Variable:
+o The name variable is private, so it cannot be accessed directly from outside the
+Person class.
+• Getter Method:
+o getName() is used to retrieve the value of name.
+• Setter Method:
+o setName(String newName) is used to set or update the value of name. The this
+keyword is used to refer to the current object's instance variable.
 
-In simple terms, it means restricting direct access to the data and allowing it to be accessed or modified only through
-methods. This helps protect the data and ensures better control over how it is used.
-------------------------------------------------------------------------------------------------------------------------
-
-🔐 How do we achieve Encapsulation in Java?
-1. All variables should be marked as private, so they can't be accessed directly from outside the class.
-2. For each variable, we create getter and setter methods to read and modify the values.
-3. This way, the variables can only be accessed and updated through methods, not directly.
-------------------------------------------------------------------------------------------------------------------------
-
-✅ Benefits of Encapsulation:
-Improves security of data.
-Makes the class easier to manage and maintain.
-Provides controlled access to the data.
-Helps in hiding the internal implementation details from the user.
-
-Example:
-
-
-
-
+Accessing Private Variables
+In a different class, you cannot directly access the private variables:
+Example to demonstrate accessing the private variables: Ex1_AccountMain

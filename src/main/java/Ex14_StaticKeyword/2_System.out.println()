@@ -1,0 +1,25 @@
+System.out.println()
+In Java, System.out.println() is a commonly used method to print information to the console.
+Let’s try to understand with an example.
+
+class Test
+{
+static String s="welcome";
+}
+Test.s.length()
+
+In this example:
+• Test is a class.
+• s is a static string variable within the Test class with the value "welcome".
+• The length() method is called on s, which returns the length of the string.
+Similarly,
+class System
+{
+ static PrintStream out;
+}
+System.out.println()
+System.out.print()
+Here’s what’s happening:
+• System is a class provided by Java.
+• out is a static variable of type PrintStream in the System class.
+• The println() and print() methods belong to the PrintStream class.

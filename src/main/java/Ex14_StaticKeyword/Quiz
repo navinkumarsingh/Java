@@ -1,0 +1,155 @@
+Quiz on Java Encapsulation, Static Variables, and Static Methods
+
+Questions
+1. What is encapsulation in Java?
+a) The process of hiding implementation details and showing only functionality to
+the user
+b) The process of inheriting properties from another class
+c) The process of creating multiple methods with the same name but different
+parameters
+d) The process of converting data types
+
+2. Which access modifier is typically used to achieve encapsulation?
+a) public
+b) protected
+c) private
+d) default
+
+3. What is the purpose of getter methods in encapsulation?
+a) set the values of private variables
+b) retrieve the values of private variables
+c) perform calculations
+d) delete private variables
+
+4. How setter methods support encapsulation?
+a) By hiding the private variables
+b) By setting the values of private variables
+c) By retrieving the values of private variables
+d) By making private variables public
+
+5. In encapsulation, how are private variables accessed outside the class?
+a) Directly
+b) Using getter and setter methods
+c) Using public variables
+d) Using protected methods
+
+6. What is a static variable in Java?
+a) A variable that belongs to an instance of a class
+b) A variable that can be accessed only within the class
+c) A variable that belongs to the class itself, rather than any instance
+d) A variable that changes its value every time it's accessed
+
+7. How is a static variable declared in Java?
+a) static int variableName;
+b) private int variableName;
+c) public final int variableName;
+d) protected int variableName;
+
+8. What is the primary purpose of a static method in Java?
+a) To be able to call the method without creating an instance of the class
+b) To access instance variables of the class
+c) To override methods of a superclass
+d) To implement multiple inheritance
+
+9. Can a static method access non-static variables directly?
+a) Yes
+b) No
+c) Only if the non-static variables are declared static
+d) Only if the static method is inherited
+
+10. Which keyword is used to define a static method?
+a) static
+b) final
+c) private
+d) protected
+
+11. Can you call a static method from a non-static method?
+a) Yes
+b) No
+c) Only if the static method is private
+d) Only if the non-static method is private
+
+12. What is the output of the following code?
+
+public class Test {
+ static int count = 0;
+
+ public static void increment() {
+ count++;
+ }
+
+ public static void main(String[] args) {
+ increment();
+ System.out.println(count);
+ }
+}
+
+a) 0
+b) 1
+c) Compilation error
+d) Runtime error
+
+13. Which of the following statements about static variables is false?
+a) Static variables are shared among all instances of a class
+b) Static variables are initialized only once
+c) Static variables can be accessed by non-static methods
+d) Static variables can have different values for different instances
+
+14. What is the scope of a static variable in Java?
+a) The scope of a static variable is limited to the instance of the class
+b) The scope of a static variable is the entire class
+c) The scope of a static variable is the method in which it is declared
+d) The scope of a static variable is only the main method
+15. Can a static method be overridden in Java?
+a) Yes
+b) No
+c) Only in an abstract class
+d) Only if it is declared final
+16. How dyou call a static method in Java?
+a) Using the class name
+b) Using an object of the class
+c) Using a different method
+d) Using a constructor
+
+17. Which of the following is a benefit of encapsulation?
+a) Increased flexibility
+b) Decreased complexity
+c) Enhanced code maintainability
+d) All of the above
+18. Which of the following statements is true about encapsulation?
+a) Encapsulation allows direct access tprivate variables
+b) Encapsulation helps in hiding the internal state of an object
+c) Encapsulation is only used in public methods
+d) Encapsulation is the same as inheritance
+19. What will happen if you try to access a private variable of a class from outside the class?
+a) The program will compile successfully
+b) The program will compile with a warning
+c) The program will throw a compilation error
+d) The program will throw a runtime error
+20. In which scenario would you use static variables?
+a) When you need tstore values that are common tall instances of a class
+b) When you need tstore values specific ta single instance of a class
+c) When you need tdefine methods that are not related tthe class
+d) When you need toverride instance methods
+
+Answers
+1. a) The process of hiding implementation details and showing only functionality tthe user
+2. c) private
+3. b) Tretrieve the values of private variables
+4. b) By setting the values of private variables
+5. b) Using getter and setter methods
+6. c) A variable that belongs to the class itself, rather than any instance
+7. a) static int variableName;
+8. a) Tbe able to call the method without creating an instance of the class
+9. b) No
+10. a) static
+11. a) Yes
+12. b) 1
+13. d) Static variables can have different values for different instances
+14. b) The scope of a static variable is the entire class
+15. b) No
+16. a) Using the class name
+17. d) All of the above
+18. b) Encapsulation helps in hiding the internal state of an object
+19. c) The program will throw a compilation error
+20. a) When you need tstore values that are common tall instances of a class
