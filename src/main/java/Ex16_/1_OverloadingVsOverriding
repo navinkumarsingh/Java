@@ -1,0 +1,20 @@
+Method Overloading Vs Method Overriding
+
+Method Overloading	                                          Method Overriding
+1. Occurs within a single class/multiple classes.	          Occurs between a parent and child class
+2. Involves multiple methods with the same                    Involves a method in the child class with the
+   name but different parameters	                          same name and parameters as a method in the parent class
+3. Decision is made at compile-time (static binding)	      Decision is made at runtime (dynamic binding)
+4. The return type can be the same or different.              The return type must be the same or a subtype in the
+                                                              child class
+5. No relationship required between the overloaded methods	  Requires an inheritance relationship between the parent
+                                                              and child classes
+6. Overloaded methods can have different access modifiers	  Overriding methods must have the same or higher access
+                                                              modifier in the child class
+7. Overloading allows methods with different                  Overriding allows child classes to provide specific
+functionality to have the same name                           implementations for inherited methods
+8. Method parameters can vary in type, order, or number       Method parameters must have the same type, order,
+                                                              and number in both parent and child
+9. Method overloading is achieved within a single class       Method overriding is achieved by using the @Override
+   by changing the method signature                           annotation in the child class
+10. Overloading is a form of compile-time polymorphism	      Overriding is a form of runtime polymorphism
