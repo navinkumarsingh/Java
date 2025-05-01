@@ -1,4 +1,4 @@
-package Ex_17_Casting;
+package Ex17_Casting;
 
     //Parent
     class Vehicle
@@ -53,18 +53,14 @@ package Ex_17_Casting;
             //Car c=(Car) new Vehicle(); //java.lang.ClassCastException
             //invalid
 
-
-            //valid
-            Vehicle v=new Car();
-            Car c=(Car) v;
-
+            //Valid
+            Vehicle v = new Car();
+            Car c = (Car) v;
             System.out.println(c.brand);
             System.out.println(c.model);
-
             c.start();
-            c.stop();
             c.run();
-
+            c.stop();
         }
 
     }
