@@ -1,4 +1,4 @@
-package ex6_Arrays;
+package ex6_ArraysPrograms_Part2;
 public class Assignment7_BubbleSort {
     public static void main(String[] args) {
         int[] arr = {5, 1, 4, 2, 8};

@@ -1,4 +1,4 @@
-package ex6_Arrays;
+package ex6_Arrays_Part1;
 /*
 Operations on 2-dimensional Arrays
 1. Declaring an array

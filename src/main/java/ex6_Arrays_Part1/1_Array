@@ -88,7 +88,7 @@ for (int num : arr) {
 
 Complete Java Program: Single-Dimensional Array
 
-package ex6_Arrays;
+package ex6_Arrays_Part1;
 
 public class Ex1_SingleDimensionalArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ex6_Arrays;
+package ex6_ArraysPrograms_Part2;
 
 //Motive: This program finds the minimum element in a given array.
 public class Assignment2_FindMinElement {

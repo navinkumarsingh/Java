@@ -1,5 +1,5 @@
 // Package declaration - This helps organize related classes together in a folder-like structure.
-package ex6_Arrays;
+package ex6_Arrays_Part1;
 
 // Class declaration - A class is a blueprint for Java programs.
 public class Ex3_TwoDimensionalArrayUsingEnhancedForLoop {

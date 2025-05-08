@@ -1,4 +1,4 @@
-package ex6_Arrays;
+package ex6_ArraysPrograms_Part2;
 
 import java.util.HashSet;
 public class Assignment9_IntersectionOfArrays {

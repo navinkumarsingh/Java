@@ -1,6 +1,6 @@
-package ex6_Arrays;
+package ex6_Arrays_Part1;
 
-public class Ex6_ObjectArray {
+public class Ex4_ObjectArray {
     public static void main(String[] args) {
 
         Object a[] = {100,10.5,'A',"WELCOME",true};

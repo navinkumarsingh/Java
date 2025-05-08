@@ -3,7 +3,7 @@ So far we understood one definition about Array. Array is a collection of elemen
 same data type that is homogeneous data means same data type values.
 
 If we create an integer array we have to store only integer.
-I we create double array we can store only double.
+If we create double array we can store only double.
 If we create array as String we can store only Strings.
 
 But if we want to store heterogeneous data that means if we want to store different type of data in Array how that is
@@ -52,7 +52,7 @@ But if we create an array with object type we can store different type of data.
 
 Next how to read these data: 1. Using enhanced for loop 2. Using Normal for Loop
 
-package ex6_Arrays;
+package ex6_Arrays_Part1;
 
 public class Ex6_ObjectArray {
     public static void main(String[] args) {

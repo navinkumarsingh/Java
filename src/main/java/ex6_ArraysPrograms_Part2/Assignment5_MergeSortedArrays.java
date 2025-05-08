@@ -1,4 +1,4 @@
-package ex6_Arrays;
+package ex6_ArraysPrograms_Part2;
 
 //Motive: This program merges two sorted arrays into a single sorted array.
 public class Assignment5_MergeSortedArrays {

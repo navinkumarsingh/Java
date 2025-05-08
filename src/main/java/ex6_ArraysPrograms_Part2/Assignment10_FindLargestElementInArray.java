@@ -1,10 +1,10 @@
-package ex6_Arrays;
+package ex6_ArraysPrograms_Part2;
 
 //Motive: This program finds the maximum element in a given array.
-public class Assignment1_FindMaxElement {
+public class Assignment10_FindLargestElementInArray {
     public static void main(String[] args) {
         // Define the input array
-        int arr[] = {10, 20, 50, 40, 80, 30};
+        int arr[] = {4, 2, 7, 1, 9};
         int maxValue = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > maxValue) {
@@ -15,14 +15,7 @@ public class Assignment1_FindMaxElement {
     }
 }
 
-/*
-Max Value is:10
-Max Value is:20
-Max Value is:50
-Max Value is:50
-Max Value is:80
-Max Value is:80
- */
+
 
 
 
