@@ -1,6 +1,6 @@
 package ex6_ArraysPrograms_Part2;
 //Motive: This program finds the second largest element in a given array.
-public class Assignment4_FindSecondLargest {
+public class Assignment13_FindSecondLargest {
     public static void main(String[] args) {
         // Define the input array
         int[] arr = {10, 20, 30, 40, 50};

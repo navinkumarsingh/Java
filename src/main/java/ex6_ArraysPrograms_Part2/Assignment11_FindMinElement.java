@@ -1,7 +1,7 @@
 package ex6_ArraysPrograms_Part2;
 
 //Motive: This program finds the minimum element in a given array.
-public class Assignment2_FindMinElement {
+public class Assignment11_FindMinElement {
     public static void main(String[] args) {
         // Define the input array
        int[] a  = {11,12,43,55,66,77};

@@ -1,6 +1,6 @@
 package ex6_ArraysPrograms_Part2;
 //Motive: This program reverses the elements of a given array.
-public class Assignment3_ReverseArray {
+public class Assignment12_ReverseArray {
     public static void main(String[] args) {
         // Define the input array
         int[] arr = {10, 20, 30, 40, 50};

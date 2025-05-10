@@ -3,7 +3,7 @@ package ex6_ArraysPrograms_Part2;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Assignment2_SortingInDescendingOrderUsingSortMethod {
+public class Assignment1_SortingInDescendingOrderUsingSortMethod {
     public static void main(String[] args) {
         //Sorting integer elements in descending order
         //Array should be Object Type and should be Same type of data. Hence instead of int we should use Integer
