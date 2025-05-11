@@ -1,5 +1,5 @@
 // Package name where this class is stored
-package ex6_ArraysPrograms_Part2;
+package ex6_ArraysPrograms;
 // Importing Arrays class to use built-in binarySearch method
 import java.util.Arrays;
 /*

@@ -52,7 +52,7 @@ But if we create an array with object type we can store different type of data.
 
 Next how to read these data: 1. Using enhanced for loop 2. Using Normal for Loop
 
-package ex6_Arrays_Part1;
+package ex6_Arrays;
 
 public class Ex6_ObjectArray {
     public static void main(String[] args) {

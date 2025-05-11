@@ -1,5 +1,5 @@
 // This line defines the package where the current class is located
-package ex6_ArraysPrograms_Part2;
+package ex6_ArraysPrograms;
 
 // Importing the Arrays class so we can use utility methods like sort() and binarySearch()
 import java.util.Arrays;

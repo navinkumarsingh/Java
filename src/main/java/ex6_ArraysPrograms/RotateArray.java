@@ -1,4 +1,4 @@
-package ex6_ArraysPrograms_Part2;
+package ex6_ArraysPrograms;
 //This program rotates an array to the right by a given number of positions.
 public class RotateArray {
     public static void main(String[] args) {

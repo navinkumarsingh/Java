@@ -1,4 +1,4 @@
-package ex6_Arrays_Part1;
+package ex6_Arrays;
 //This program finds the missing number in an array of consecutive numbers.
 public class Assignment10_MissingNumberInArray {
     public static void main(String[] args) {

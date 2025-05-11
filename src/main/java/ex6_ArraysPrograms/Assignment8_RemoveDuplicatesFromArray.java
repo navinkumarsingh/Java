@@ -1,4 +1,4 @@
-package ex6_ArraysPrograms_Part2;
+package ex6_ArraysPrograms;
 
 import java.util.HashSet;
 //This program removes duplicate elements from an array.

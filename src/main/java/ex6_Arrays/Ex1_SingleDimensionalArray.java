@@ -1,4 +1,4 @@
-package ex6_Arrays_Part1;
+package ex6_Arrays;
 
 /*     1. Declare an array
        2. add values into array

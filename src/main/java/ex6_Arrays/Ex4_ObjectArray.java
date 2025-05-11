@@ -1,4 +1,4 @@
-package ex6_Arrays_Part1;
+package ex6_Arrays;
 
 public class Ex4_ObjectArray {
     public static void main(String[] args) {

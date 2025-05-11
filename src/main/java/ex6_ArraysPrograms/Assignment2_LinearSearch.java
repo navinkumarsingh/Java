@@ -1,4 +1,4 @@
-package ex6_ArraysPrograms_Part2;
+package ex6_ArraysPrograms;
 
 public class Assignment2_LinearSearch {
     public static void main(String[] args) {

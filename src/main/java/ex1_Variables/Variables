@@ -1,7 +1,9 @@
 🔸 What is a Variable in Java?
-In Java, a variable is like a container that stores data. It gives a name to a value so you can use and change that value in your program.
+In Java, a variable is like a container that stores data. It gives a name to a value so you can use and change that
+value in your program.
 
-We can think of a variable like a labeled box where you store something — like a number, a word, or even a result of a calculation.
+We can think of a variable like a labeled box where you store something — like a number, a word, or even a result
+of a calculation.
 
 ✅ Types of Variables in Java:
 1. Local Variables

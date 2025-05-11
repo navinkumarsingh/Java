@@ -30,7 +30,7 @@ End of Loop: Since there are no more elements, the loop terminates.
 ✅ The loop automatically moves to the next element, eliminating the need for an index variable.
 
 Example Program Using Enhanced For Loop
-package ex6_Arrays_Part1;
+package ex6_Arrays;
 
 public class EnhancedForLoopExample {
     public static void main(String[] args) {

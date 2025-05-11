@@ -1,4 +1,4 @@
-package ex6_ArraysPrograms_Part2;
+package ex6_ArraysPrograms;
 //Motive: This program reverses the elements of a given array.
 public class Assignment12_ReverseArray {
     public static void main(String[] args) {
