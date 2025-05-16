@@ -51,12 +51,14 @@ public class HashSetExample {
         }
 
         //read data using Iterator
-        System.out.println("Reading data using Iterator");
-       Iterator<Object> elements = mySet.iterator();
-       while(elements.hasNext())
-       {
-           System.out.println(elements.next());
-       }
+
+        System.out.println("Reading data using Iterator.......");
+        Iterator itr=mySet1.iterator();
+
+        while(itr.hasNext())
+        {
+            System.out.println(itr.next());
+        }
 
     }
 }
