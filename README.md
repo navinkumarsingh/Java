@@ -1,24 +1,24 @@
 # Java Programming for SDET - Learning & Practice
 
-Welcome! This repository documents my self-paced journey through the "Learn Java Programming"
-tailored for SDET (Software Development Engineer in Test) roles.
+This repository is a comprehensive record of my self-driven journey to master Java for SDET roles, inspired by courses 
+from Pavan Kumar and Abdul Bari, and enriched by my own research and hands-on practice.
 
-## About the Repository
+## Highlights
 
-- Covers core Java concepts, OOPs Concepts, Collections(List - Array List,Set - Hash Set, Map - Hash Map), File handling
-  and problem-solving techniques.
-- All programs are implemented and practiced by myself to strengthen my Java and automation skills.
-- Follows a logical learning path from basics to advanced topics, with clear code examples and explanations.
+- **Thorough coverage** of Java fundamentals: variables, data types, operators, control statements, loops, and methods, 
+  each reinforced with practical assignments.
+- **Deep dive into OOPs**, Collections (`ArrayList`, `HashSet`, `HashMap`), File Handling, and real-world problem-solving.
+- **All code is self-written, tested, and explained**—demonstrating my commitment to learning by doing.
+- **Special focus on Arrays & Strings**: a dedicated folder with curated programs, solutions, and detailed explanations.
+- **Well-organized structure**: topics progress from basics to advanced, with clear navigation, theory, and code samples.
+- **Includes file handling and properties file examples** relevant for automation and real SDET scenarios.
 
+## Acknowledgements
 
-## Repository Structure
-
-- Organized by topic and difficulty for easy navigation.
-- Each folder contains theory, code samples and assignments.
+Thanks to **Abdul Bari**, **Pavan Kumar**, and the broader Java community for foundational resources and inspiration.
 
 ## Connect
 
-- [My LinkedIn - Navin Kumar Singh](https://www.linkedin.com/in/navin-bmsce/)
+- [LinkedIn: Navin Kumar Singh](https://www.linkedin.com/in/navin-bmsce/)
 
-
-**Check out the code and feel free to connect or contribute!**
+**Explore the code, learn, and feel free to connect or contribute!**
