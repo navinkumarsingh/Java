@@ -1,20 +1,21 @@
-package ex5_Loops; // Defines the package name (used for organizing classes)
+package ex5_Loops; // Defines the package name to organize related classes together
 
-public class Ex18_BreakUnreachableStatement { // Class definition
-    public static void main(String[] args) { // Main method - execution starts here
+public class Ex18_BreakUnreachableStatement { // Declares a public class named Ex18_BreakUnreachableStatement
+    public static void main(String[] args) { // Main method where the program execution starts
 
-        // 'for' loop starts from i = 1 and runs until i <= 10
+        // 'for' loop that starts with i=1 and repeats until i becomes greater than 10
+        // After each loop, i is increased by 1 (i++)
         for (int i = 1; i <= 10; i++) {
 
-            // If i equals 5, the break statement stops the loop
+            // Checks if the current value of i is equal to 5
             if(i == 5) {
-                break; // Exits the loop immediately when i == 5
-
-                // System.out.println(i); // This statement is unreachable and will cause an error
-                // Any statement after 'break' inside the same block is unreachable.
+                break; // Stops the entire loop immediately when i equals 5
+                // Any code placed after 'break' inside this block will never run (unreachable)
+                // For example, the below print statement if uncommented will cause a compile-time error:
+                // System.out.println(i);
             }
 
-            // Prints the value of i if it hasn't reached 5
+            // Prints the current value of i to the console, only if the loop has not been stopped by break
             System.out.println(i);
         }
     }

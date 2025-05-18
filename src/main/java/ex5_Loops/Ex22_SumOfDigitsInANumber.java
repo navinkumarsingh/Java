@@ -1,35 +1,40 @@
-package ex5_Loops; // Defines the package name (used for organizing classes)
+package ex5_Loops; // Defines the package name (used to organize classes)
 
-import java.util.Scanner; // Importing Scanner class to take user input
+import java.util.Scanner; // Import Scanner class to read input from user
 
 public class Ex22_SumOfDigitsInANumber { // Class definition
     public static void main(String[] args) { // Main method - execution starts here
 
-        System.out.println("Enter the Number"); // Prompt the user to enter a number
+        System.out.println("Enter the Number"); // Ask the user to enter a number
 
-        Scanner sc  = new Scanner(System.in); // Creating a Scanner object to read user input
-        int num = sc.nextInt(); // Storing the user input as an integer
+        Scanner sc  = new Scanner(System.in); // Create Scanner object to get input from user
+        int num = sc.nextInt(); // Read the integer input and store it in variable 'num'
 
-        int sum = 0; // Initializing sum to store the total sum of digits
+        int sum = 0; // Initialize sum to 0, this will store the total of all digits
 
-        // Loop runs until num becomes 0
+        // Run the loop until 'num' becomes 0
         while (num > 0) {
 
-            sum = sum + num % 10; // Extracting the last digit using modulus operator (num % 10) and adding it to sum
-            num = num / 10; // Removing the last digit by performing integer division (num / 10)
+            // Extract the last digit of 'num' by using modulus operator (%)
+            // Add the last digit to 'sum'
+            sum = sum + num % 10;
+
+            // Remove the last digit from 'num' by dividing by 10 (integer division)
+            num = num / 10;
         }
 
-        System.out.println(sum); // Printing the final sum of digits
+        System.out.println(sum); // Print the total sum of all digits
+
+        sc.close(); // Close the Scanner to free system resources
     }
 }
 
-
 /*
 Logic Explanation:
-The user enters a number.
-The program extracts each digit from the number using num % 10.
-It adds the extracted digit to the sum variable.
-The last digit is removed from num using num / 10.
-The process repeats until all digits are processed (i.e., num becomes 0).
-Finally, the total sum of the digits is displayed.
- */
+- The user inputs a number (e.g., 1234).
+- The program extracts the last digit using 'num % 10' (e.g., 4).
+- This digit is added to the sum.
+- Then the last digit is removed from the number using integer division 'num / 10' (e.g., 123).
+- The process repeats until the number becomes 0.
+- Finally, the program prints the sum of all digits (e.g., 1+2+3+4 = 10).
+*/

@@ -1,77 +1,52 @@
-package ex5_Loops;  // Declares the package name (optional for small programs)
+package ex5_Loops;  // Package name declaration (optional for small programs)
 
-import java.util.Scanner;  // Imports the Scanner class to take user input
+import java.util.Scanner;  // Import Scanner class to read input from the user
 
-public class Ex12_FactorialOf_A_Number {  // Class definition
+public class Ex12_FactorialOf_A_Number {  // Class definition for factorial calculation
 
-    public static void main(String[] args) {  // Main method where program execution begins
+    public static void main(String[] args) {  // Main method where the program starts execution
 
-        Scanner sc = new Scanner(System.in);  // Creates a Scanner object to take user input
+        Scanner sc = new Scanner(System.in);  // Create Scanner object to take input from the user
 
-        System.out.println("Enter a Number");  // Asks the user to enter a number
+        System.out.println("Enter a Number");  // Prompt user to enter a number
 
-        int n = sc.nextInt();  // Reads the integer input from the user and stores it in variable 'n'
+        int n = sc.nextInt();  // Read the integer input and store it in variable 'n'
 
-        int fact = 1;  // Initializes a variable 'fact' to 1 (since factorial of 0 or 1 is 1)
+        int fact = 1;  // Initialize 'fact' to 1 because factorial multiplication starts with 1
 
-        // 'for' loop to calculate factorial of 'n'
-        for(int i = 1; i <= n; i++) {
-            fact = fact * i;  // Multiplies 'fact' by 'i' in each iteration to calculate factorial
+        /*
+         * The 'for' loop below calculates the factorial of the number 'n'
+         *
+         * Syntax of for loop:
+         * for (initialization; condition; increment) {
+         *    // loop body
+         * }
+         *
+         * Explanation of this for loop:
+         * - Initialization: int i = 1; --> We start multiplying from 1
+         * - Condition: i <= n; --> Loop runs as long as i is less than or equal to n
+         * - Increment: i++ --> Increase i by 1 in every iteration
+         *
+         * Loop body: fact = fact * i;
+         * In each iteration, we multiply the current value of 'fact' by 'i' and store the result back in 'fact'.
+         * This accumulates the product of all numbers from 1 to n.
+         *
+         * Example: If n = 5,
+         * Iteration 1: fact = 1 * 1 = 1
+         * Iteration 2: fact = 1 * 2 = 2
+         * Iteration 3: fact = 2 * 3 = 6
+         * Iteration 4: fact = 6 * 4 = 24
+         * Iteration 5: fact = 24 * 5 = 120
+         * So, factorial of 5 is 120.
+         */
+
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;  // Multiply current fact value by i in each iteration
         }
 
-        // Prints the final factorial value
+        // After loop ends, print the factorial result
         System.out.println("Factorial of " + n + " is: " + fact);
 
-        sc.close();  // Closes the Scanner to free system resources
+        sc.close();  // Close Scanner object to avoid memory/resource leaks
     }
 }
-
-/*
-Explanation of Each Step:
-
-import java.util.Scanner;
-Imports the Scanner class to take user input.
-
-public class Ex12_FactorialOf_A_Number {
-Declares a class named Ex12_FactorialOf_A_Number.
-
-public static void main(A1_String[] args) {
-The main method where program execution begins.
-
-Scanner sc = new Scanner(System.in);
-Creates a Scanner object sc to read user input.
-
-System.out.println("Enter a Number");
-Displays a message asking the user to enter a number.
-
-int n = sc.nextInt();
-Reads the integer input from the user and stores it in the variable n.
-
-int fact = 1;
-Initializes fact to 1 because multiplying by 1 does not change the result.
-
-for(int i = 1; i <= n; i++) {
-Loop starts from 1 and runs up to n.
-Each iteration multiplies fact by i to calculate the factorial.
-
-fact = fact * i;
-In each iteration, fact is multiplied by the current value of i.
-
-System.out.println("Factorial of " + n + " is: " + fact);
-Prints the final factorial result after the loop completes.
-
-sc.close();
-Closes the Scanner to prevent memory leaks.
-
-Example Output:
-Input: Enter a Number
-5
-Processing (Step-by-Step Calculation):
-fact = 1 * 1 = 1
-fact = 1 * 2 = 2
-fact = 2 * 3 = 6
-fact = 6 * 4 = 24
-fact = 24 * 5 = 120
-Output:
-Factorial of 5 is: 120
- */

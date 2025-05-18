@@ -1,35 +1,63 @@
+// Define the package name this file belongs to
 package ex4_ConditionalStatements;
 
-import java.util.Scanner; // Import Scanner class to take user input
+// Import the Scanner class to take user input from the keyboard
+import java.util.Scanner;
 
-// Main class to handle user input and call the appropriate converter
-public class Ex11_NumberToWordSwitchCaseConverter  {
+// Main class to run the program
+public class Ex11_NumberToWordSwitchCaseConverter {
+
+    // Main method: the entry point of the program
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // Create Scanner object to take user input
-        System.out.println("Enter a number (1-6):"); // Prompt user to enter a number
 
-        if (sc.hasNextInt()) { // Check if input is an integer
+        // Create a Scanner object 'sc' to read user input from the console
+        Scanner sc = new Scanner(System.in);
+
+        // Ask the user to enter a number between 1 and 6
+        System.out.println("Enter a number (1-6):");
+
+        // Check if the user input is an integer (e.g., 1, 2, 3)
+        if (sc.hasNextInt()) {
+            // Read the integer input from the user
             int num = sc.nextInt();
-            NumberToWordConverter converter = new NumberToWordConverter(); // Create an instance of NumberToWordConverter
-            converter.convertNumber(num); // Convert number to word
-        } else { // If input is not an integer, process it as a string
-            String num = sc.next().trim(); // Read input as a string and trim spaces
-            StringNumberToWordConverter strConverter = new StringNumberToWordConverter(); // Create an instance of StringNumberToWordConverter
-            strConverter.convertStringNumber(num); // Convert string number to word
+
+            // Create an object of the NumberToWordConverter class
+            NumberToWordConverter converter = new NumberToWordConverter();
+
+            // Call the method to convert the entered number into a word
+            converter.convertNumber(num);
+        } else {
+            // If the input is not an integer, treat it as a string (like "1" or "two")
+
+            // Read the input as a string and remove any extra spaces
+            String num = sc.next().trim();
+
+            // Create an object of the StringNumberToWordConverter class
+            StringNumberToWordConverter strConverter = new StringNumberToWordConverter();
+
+            // Call the method to convert the string input into a word
+            strConverter.convertStringNumber(num);
         }
 
-        sc.close(); // Close the Scanner object to avoid memory leaks
+        // Close the Scanner object to prevent memory leaks
+        sc.close();
     }
 }
 
-// Class to handle numeric input and display the number in words
+// A helper class to convert numeric (int) input into word format
 class NumberToWordConverter {
+
+    // Method to convert integer numbers into words
     public void convertNumber(int num) {
-        if (num >= 1 && num <= 6) { // Check if the number is between 1 and 6
-            switch (num) { // Switch case to display corresponding word
+
+        // Check if the number is within the valid range (1 to 6)
+        if (num >= 1 && num <= 6) {
+
+            // Use switch-case to match the number and print the corresponding word
+            switch (num) {
                 case 1:
                     System.out.println("ONE");
-                    break;
+                    break; // Exit switch after match is found
                 case 2:
                     System.out.println("TWO");
                     break;
@@ -46,18 +74,25 @@ class NumberToWordConverter {
                     System.out.println("SIX");
                     break;
                 default:
+                    // This line will never run due to earlier range check
                     System.out.println("NOT A VALID NUMBER");
             }
+
         } else {
+            // If number is not between 1 to 6, show error message
             System.out.println("Invalid input. Please enter a number between 1 to 6");
         }
     }
 }
 
-// Class to handle string input and display the number in words
+// A helper class to convert string input (like "1" or "three") into word format
 class StringNumberToWordConverter {
+
+    // Method to convert string numbers into words
     public void convertStringNumber(String num) {
-        switch (num) { // Switch case to display corresponding word
+
+        // Use switch-case to match the string and print corresponding word
+        switch (num) {
             case "1":
                 System.out.println("ONE");
                 break;
@@ -77,8 +112,8 @@ class StringNumberToWordConverter {
                 System.out.println("SIX");
                 break;
             default:
+                // If input doesn't match any valid number string
                 System.out.println("Invalid input. Please enter a number between 1 to 6");
         }
     }
 }
-

@@ -1,13 +1,21 @@
+// Define the package this file belongs to
 package ex5_Loops;
 
+// Main class to demonstrate an infinite for loop
 public class Ex6_InfiniteForLoop {
-    //The loop has no condition or stopping criteria. So it will be an infinite loop
-        public static void main(String[] args) {
-            for (;;) {  // No condition means it runs forever
-                System.out.println("This loop will never end");
-            }
+
+    // Main method - program entry point
+    public static void main(String[] args) {
+
+        // Start an infinite for loop
+        // No initialization, no condition, no increment/decrement
+        // So the loop runs forever
+        for (;;) {
+            // Print this message repeatedly because the loop never ends
+            System.out.println("This loop will never end");
         }
     }
+}
 
     /*
 

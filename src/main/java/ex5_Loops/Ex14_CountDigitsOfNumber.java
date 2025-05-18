@@ -1,39 +1,48 @@
-package ex5_Loops; // Defines the package name (used for organizing classes)
+package ex5_Loops;  // Defines the package name (used to organize classes logically)
 
-import java.util.Scanner; // Imports the Scanner class to take user input
+import java.util.Scanner;  // Imports Scanner class to get input from user
 
-public class Ex14_CountDigitsOfNumber { // Class definition
-    public static void main(String[] args) { // Main method - execution starts here
+public class Ex14_CountDigitsOfNumber {  // Class definition
+    public static void main(String[] args) {  // Main method - starting point of the program
 
-        // Creating a Scanner object to take input from the user
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);  // Create Scanner object to read user input
 
-        // Prompting the user to enter a number
-        System.out.println("Enter the Number");
+        System.out.println("Enter the Number");  // Prompt the user to enter a number
 
-        // Reading an integer input from the user and storing it in variable 'n'
-        int n = sc.nextInt();
+        int n = sc.nextInt();  // Read the integer input from the user and store in variable 'n'
 
-        // Variable to keep track of the count of digits
-        int count = 0;
+        int count = 0;  // Initialize 'count' to zero, this will keep track of how many digits are in 'n'
 
-        // Loop runs until 'n' becomes 0
-        while(n > 0) {
+        /*
+         * Loop Explanation:
+         * while(n > 0) means the loop will continue as long as 'n' is greater than 0.
+         *
+         * Inside the loop:
+         * 1. int r = n % 10;
+         *    - This extracts the last digit of 'n'.
+         *    - The modulus operator (%) gives the remainder after dividing by 10.
+         *    - Example: If n = 1234, 1234 % 10 = 4, so r = 4 (the last digit).
+         *
+         * 2. n = n / 10;
+         *    - This removes the last digit from 'n' by dividing it by 10.
+         *    - Integer division discards the decimal part.
+         *    - Example: If n = 1234, 1234 / 10 = 123 (removes the last digit).
+         *
+         * 3. count++;
+         *    - Increase the digit count by 1 since we've just processed one digit.
+         *
+         * The loop continues until all digits have been counted (n becomes 0).
+         */
 
-            // Extracts the last digit of 'n' using modulo (%) operation
-            int r = n % 10;
-
-            // Removes the last digit from 'n' by performing integer division (/)
-            n = n / 10;
-
-            // Increases the count by 1 for each digit encountered
-            count++;
+        while (n > 0) {
+            int r = n % 10;  // Extract last digit (not actually used here, but shows how digits are processed)
+            n = n / 10;      // Remove last digit from the number
+            count++;         // Increase digit count by 1
         }
 
-        // Prints the total count of digits in the given number
+        // Print the total number of digits counted
         System.out.println("Count of digits are: " + count);
 
-        // Closing the Scanner object to avoid memory leaks
-        sc.close();
+        sc.close();  // Close the Scanner object to free resources
     }
 }

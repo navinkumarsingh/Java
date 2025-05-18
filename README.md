@@ -1,5 +1,30 @@
-# Java Programming - Learning & Practice
-This repository contains Java programs covering core Java concepts, implemented with examples to strengthen the Java understanding. 
-The structure follows a logical learning path, covering basics to advanced topics.
-This repo is a result of my self-paced Java learning journey. It covers topics such as OOPs, data structures, and problem-solving techniques.
-The repository is structured to cover Java topics step by step, ensuring a solid foundation in programming.
+# Java Programming for SDET - Learning & Practice
+
+Welcome! This repository documents my self-paced journey through the "Learn Java Programming" course by Pavan Kumar,
+tailored for SDET (Software Development Engineer in Test) roles.
+
+## About the Repository
+
+- Covers core Java concepts, OOPs Concepts, Collections(List - Array List,Set - Hash Set, Map - Hash Map), File handling
+  and problem-solving techniques.
+- All programs are implemented and practiced by myself to strengthen my Java and automation skills.
+- Follows a logical learning path from basics to advanced topics, with clear code examples and explanations.
+- 
+## Course Details
+
+- **Course:** Learn Java Programming by Pavan Kumar
+- **Focus:** SDET/QA Automation
+- **Instructor:** [Pavan Kumar](https://www.udemy.com/course/learn-java-programming-a/)
+
+## Repository Structure
+
+- Organized by topic and difficulty for easy navigation.
+- Each folder contains code samples and assignments.
+
+## Connect
+
+- [My LinkedIn - Navin Kumar Singh](https://www.linkedin.com/in/navin-bmsce/)
+- [Course Instructor - Pavan Kumar](https://www.linkedin.com/in/pavan-kumar-bhimavarapu-4aa7a332/)
+
+
+**Check out the code and feel free to connect or contribute!**

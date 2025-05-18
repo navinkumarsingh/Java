@@ -1,64 +1,70 @@
+// Declaring the package name - this file belongs to the 'ex22_SetCollection' package
 package ex22_SetCollection;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.HashSet;
+// Importing required classes
+import java.util.ArrayList;    // For converting Set to List
+import java.util.Iterator;     // For iterating over Set elements
+import java.util.Set;          // Interface for Set collections
+import java.util.HashSet;      // HashSet class implements the Set interface
 
+// Main class
 public class HashSetExample {
+    // Main method - entry point of the Java program
     public static void main(String[] args) {
-        //Set mySet =new HashSet(); //Generic
-        //Set<String> mySet = new HashSet<String> (); //Specific
+
+        // Creating a HashSet that can store any type of object (mixed types)
+        // You could also use: Set mySet = new HashSet(); // more generic
+        // Or: Set<String> mySet = new HashSet<String>(); // for String only
         HashSet<Object> mySet = new HashSet<Object>();
 
-        //Adding element
-        mySet.add(10);
-        mySet.add(10.5);
-        mySet.add('A');
-        mySet.add("Welcome");
-        mySet.add(false);
-        mySet.add(null);
-        mySet.add(10); //Duplicate
-        mySet.add(null); //Duplicate
+        // Adding different types of elements to the HashSet
+        mySet.add(10);            // Integer
+        mySet.add(10.5);          // Double
+        mySet.add('A');           // Character
+        mySet.add("Welcome");     // String
+        mySet.add(false);         // Boolean
+        mySet.add(null);          // Null value (allowed in HashSet)
+        mySet.add(10);            // Duplicate value (ignored by HashSet)
+        mySet.add(null);          // Duplicate null (also ignored)
 
-        //Size of HashSet
-        System.out.println("Size is:" + mySet.size()); //6
+        // Getting the total number of unique elements in the HashSet
+        System.out.println("Size is:" + mySet.size()); // Should print 6 (duplicates ignored)
 
-        //printing - insertion order not preserved
-        System.out.println("Elements in HashSet:" + mySet); //[null, A, 10.5, false, 10, Welcome]
+        // Printing elements in the HashSet (insertion order not preserved)
+        System.out.println("Elements in HashSet:" + mySet);
+        // HashSet does not guarantee order, output may look like: [null, A, 10.5, false, 10, Welcome]
 
-        //remove element
-        mySet.remove(10.5);  //Here mySet is a value not index
+        // Removing a specific element from the HashSet
+        mySet.remove(10.5);  // Removes value 10.5, not by index (HashSet doesn't use indexes)
         System.out.println("HashSet elements after removing" + mySet);
 
-        //Insert element  - Not possible to insert element. Indexing not supported.
+        // Inserting at a specific index is not possible in HashSet
+        // Also, we cannot directly access an element by index
 
-        //Access specific element - Not possible, Index not support
+        // Workaround: Convert HashSet to ArrayList to access elements by index
+        ArrayList myList = new ArrayList(mySet);   // Convert HashSet to ArrayList
+        System.out.println("Elements in ArrayList:" + myList);
+        // Example Output: [null, A, false, 10, Welcome]
 
-        //We can access specific element in different way.
-        ArrayList myList = new ArrayList(mySet);
-        System.out.println("Elements in ArrayList:" + myList); //[null, A, false, 10, Welcome]
-        System.out.println("The element present in 3rd position:" + myList.get(4)); //Welcome
+        // Access and print element at index 4 (fifth position)
+        System.out.println("The element present in 3rd position:" + myList.get(4)); // Welcome
 
-        //converting back to Set
-        Set mySet1 = new HashSet(myList);
-        System.out.println(mySet1);
+        // Convert ArrayList back to a HashSet
+        Set mySet1 = new HashSet(myList);   // Re-create a Set from the ArrayList
+        System.out.println(mySet1);         // Print the new Set
 
-        //read data using for-each loop
+        // Reading all elements using for-each loop
         System.out.println("Reading data using for-each loop");
-        for (Object elements : mySet) {
-            System.out.println(elements);
+        for (Object elements : mySet) {         // Loop through each element in mySet
+            System.out.println(elements);       // Print current element
         }
 
-        //read data using Iterator
-
+        // Reading all elements using an Iterator
         System.out.println("Reading data using Iterator.......");
-        Iterator itr=mySet1.iterator();
+        Iterator itr = mySet1.iterator();       // Create an iterator for mySet1
 
-        while(itr.hasNext())
-        {
-            System.out.println(itr.next());
+        while(itr.hasNext()) {                  // Check if more elements are present
+            System.out.println(itr.next());     // Print the next element
         }
-
     }
 }
