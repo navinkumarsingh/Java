@@ -1,0 +1,31 @@
+Quiz: HashMap
+1. What does a HashMap store?
+A. Only keys
+B. Only values
+C. Key-value pairs
+D. Only objects
+Answer: C. Key-value pairs
+2. What happens if you try to insert a duplicate key in a HashMap?
+A. The new key is added.
+B. The old value associated with the key is overwritten by the new value.
+C. An error is thrown.
+D. The HashMap does not allow duplicate keys and rejects the entry.
+Answer: B. The old value associated with the key is overwritten by the new value.
+3. Which method is used to retrieve a value from a HashMap using a key?
+A. getValue()
+B. fetch()
+C. get()
+D. find()
+Answer: C. get()
+4. Can a HashMap have null keys and null values?
+A. No, neither null keys nor null values are allowed.
+B. Yes, but only one null key is allowed and multiple null values.
+C. Yes, multiple null keys and values are allowed.
+D. Only null values are allowed but not null keys.
+Answer: B. Yes, but only one null key is allowed and multiple null values.
+5. Which method is used to remove a key-value pair from a HashMap?
+A. delete()
+B. remove()
+C. clear()
+D. discard()
+Answer: B. remove()

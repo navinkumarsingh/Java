@@ -1,0 +1,9 @@
+Collections- HashSet
+Hierarchy of Collection Framework:
+HashSet
+1. HashSet is implemented Set interface.
+2. We can store Heterogeneous and Homogeneous Data.
+3. Duplicate Elements Not Allowed
+4. Insertion Order Not Preserved
+5. Indexing is not supported
+6. Only one Null is allowed.

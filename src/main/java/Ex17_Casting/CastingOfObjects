@@ -1,0 +1,79 @@
+Casting of Objects
+Up casting and Down casting in Java
+Up casting:
+• Up casting refers to assigning a child class object to a parent class reference variable.
+• The parent class reference can implicitly hold a child class object.
+• From the parent class reference (p), we can only access members of the parent class.
+• However, overridden methods from the child class will still be accessible because the object
+is created for the child class. This demonstrates runtime polymorphism.
+Down casting:
+• Down casting refers to assigning a parent class object to a child class reference variable.
+• A child class reference cannot hold a parent class object directly, and attempting this leads to
+an error.
+Invalid example:
+• However, down casting is possible if the parent class reference is already holding a child class
+object. This requires explicit casting.
+Valid example:
+
+• After down casting, we can access both parent and child class members from the child class
+reference (c).
+• Overridden methods in the child class can still be accessed from the reference,
+demonstrating runtime polymorphism.
+Type Casting Syntax:
+A b = (C) d;
+Where:
+• A is the type of the reference you are assigning to.
+• C is the type you are casting to.
+• d is the original reference.
+Rules for Down casting:
+Rule 1: Valid Conversion
+The types of d and C must have a relationship, meaning they should either be in a parent-child
+relationship (either parent-to-child or child-to-parent), or they must be the same type.
+Rule 2: Valid Assignment
+The type C must either be the same type as A or a child of A in order for the assignment to be valid.
+Rule 3: Underlying Object Type
+The actual object type referred to by d must be either the same as C or a child of C.
+Example:
+class Parent {
+}
+class Child extends Parent {
+}
+Parent p = new Child(); // Upcasting
+Child c = (Child) p; // Downcasting
+In this example:
+• Rule 1: p is of type Parent, and Child has a relationship with Parent (child-to-parent
+relationship).
+• Rule 2: The type Child is a child of Parent, so the assignment is valid.
+
+• Rule 3: The underlying object type of p is Child, which matches the cast type, so no
+exception is thrown.
+Example:
+class Fruit {}
+class Apple extends Fruit {}
+class Orange extends Fruit {}
+public class TypeCastingObjectsRules {
+ public static void main(String[] args) {
+ // Example 1:
+
+ Apple a=new Apple();
+Orange o=(Orange) a; // Invalid as per Rule1
+
+
+ // Example 2:
+
+ Fruit f=new Apple();
+ Orange o=(Apple) f; //Invalid as per Rule2
+
+
+ // Example 3:
+ Fruit f = new Apple();
+ Orange o = (Orange) f; // Invalid as per Rule 3
+
+
+ // Example 4:
+ Fruit f = new Apple();
+ Apple a = (Apple) f; // valid
+
+ }
+}
+

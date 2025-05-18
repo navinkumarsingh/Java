@@ -1,0 +1,65 @@
+Collections – HashMap
+
+HashMap
+• HashMap class implements the Map interface which allows us to store key and value pair.
+• HashMap contains values based on the key.
+• HashMap contains only unique keys.
+• HashMap may have one null key and multiple null values.
+• HashMap maintains no order.
+
+Terminology:
+
+Key
+• A key is an object that you use to retrieve a value from the HashMap.
+• Each key must be unique, meaning you cannot have duplicate keys in a HashMap.
+• When you want to store or retrieve a value from the HashMap, you use its associated key.
+
+Value
+• A value is the data or object associated with a specific key in the HashMap.
+• While keys must be unique, values can be duplicated.
+
+Pair
+• In a HashMap, each key is associated with a value; this is known as a key-value pair.
+• Each entry in a HashMap is a pair consisting of a key and its corresponding value.
+
+keySet
+• The keySet() method returns a set view of all the keys in the HashMap.
+• You can iterate over this set to access all keys without directly modifying the HashMap.
+
+Entry
+• An entry is a single key-value pair in the HashMap.
+• You can access each entry using the entrySet() method, which returns a set view of the map's
+  entries, allowing you to iterate over both keys and values together.
+
+Comparison (ArrayList Vs HashSet Vs HashMap):
+
+Feature               ArrayList                         HashSet                         HashMap
+Definition            A resizable array that            A collection that does          A collection that stores
+                     allows duplicates.                not allow duplicates.           key-value pairs.
+Data Structure Type   List                              Set                             Map
+Duplicates            Allows duplicates.                Does not allow                  Keys must be unique;
+                                                       duplicates.                     values can be duplicated.
+Order of Elements     Insertion order                   Insertion order not             Insertion order not
+                     preserved.                        preserved.                      preserved.
+Null Values           Allows multiple null              Allows a single null            Allows one null key and
+                     elements.                         element.                        multiple null values.
+Index-based Access    Yes, elements can be              No, elements cannot be          No, access is via keys
+                     accessed by index.                accessed by index.              only.
+Common Operations     add(), get(), remove(),           add(), contains(),              put(), get(), remove(),
+                     size().                           remove(), size().               size().
+Internal              Backed by a dynamically           Backed by a hash table.         Backed by a hash table
+Implementation        resizing array.                                                  for key-value mapping.
+Best Used For         When you need ordered             When you need fast              When you need to
+                     collection with possible          lookup with unique              associate values with keys
+                     duplicates.                       elements.                       for fast retrieval.
+
+Summary:
+• ArrayList is ideal for ordered collections and allows duplicates.
+• HashSet is used when uniqueness is required and order is not important.
+• HashMap is best for storing key-value pairs where quick lookup by key is needed.
+"""
+
+
+
+More Videos on Collections:
+https://t.ly/q9om_

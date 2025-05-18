@@ -18,3 +18,20 @@ functionality to have the same name                           implementations fo
 9. Method overloading is achieved within a single class       Method overriding is achieved by using the @Override
    by changing the method signature                           annotation in the child class
 10. Overloading is a form of compile-time polymorphism	      Overriding is a form of runtime polymorphism
+
+
+Super keyword in java
+Usage of Java super Keyword
+1. super can be used to refer immediate parent class instance variable.
+2. super can be used to invoke immediate parent class method.
+3. super() can be used to invoke immediate parent class constructor.
+
+
+
+Final keyword in java
+1) final Variables : When a variable is declared as final, its value cannot be changed once it is
+initialized. This makes the variable a constant.
+2) final Methods : A method declared as final cannot be overridden by subclasses. This is useful
+when you want to prevent a subclass from altering the functionality of the parent class's method.
+3) final Classes : A class declared as final cannot be extended. This is useful when you want to prevent inheritance,
+ensuring that no other class can alter its behavior.

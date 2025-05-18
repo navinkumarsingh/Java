@@ -1,5 +1,3 @@
-/*
-These operators are used for comparing the data.
+Relational operators are used for comparing the data.
 These returns true or false.
 Relational operators are >,<,>=,<=,==,!=
- */

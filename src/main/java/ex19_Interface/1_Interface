@@ -1,0 +1,89 @@
+🔑 What is an Interface in Java?
+An interface is a blueprint of a class that specifies a set of methods that a class must implement. It is a key mechanism to achieve 100% abstraction and multiple inheritance in Java.
+
+⚙️ Key Characteristics of Interfaces
+Blueprint: It defines what to do but not how to do it.
+
+Constants: All variables are implicitly public, static, and final.
+
+Abstract Methods:
+
+Only method signatures.
+
+Implementation is provided by implementing classes.
+
+Java 8+ Enhancements:
+
+default and static methods are allowed.
+
+Java 9+ Enhancements:
+
+Private methods are allowed for internal helper logic.
+
+Functional Interface:
+
+An interface with exactly one abstract method (used in lambda expressions).
+
+Public Methods by Default:
+
+All methods are implicitly public.
+
+Multiple Inheritance Support:
+
+A class can implement multiple interfaces.
+
+Declaration Syntax:
+
+Use the interface keyword.
+
+Cannot Instantiate:
+
+You can create a reference of an interface, but not an object directly.
+
+🧱 Interface Syntax Example
+interface Drawable {
+    void draw(); // abstract method
+}
+🔗 Relationships in Java
+Relationship	Syntax                          Example
+Class           extends class	                class A extends B
+Interface       extends Interface	            interface A extends B
+Class           implements Interface	        class A implements I1, I2
+
+🔁 Multiple Inheritance via Interfaces
+Java doesn't support multiple inheritance with classes, but it does through interfaces:
+
+interface A {
+    void methodA();
+}
+
+interface B {
+    void methodB();
+}
+
+class C implements A, B {
+    public void methodA() { System.out.println("A"); }
+    public void methodB() { System.out.println("B"); }
+}
+
+✅ A class can implement multiple interfaces.
+
+⚔️ Abstract Class vs Interface (Comparison Table)
+Feature	                   Abstract Class	                    Interface
+Methods	                   Can have abstract & non-abstract     abstract methods (until Java 8) + default & static methods
+                           methods	Only
+Multiple Inheritance	   ❌ Not supported	                     ✅ Supported
+Variables	              Can have final, non-final,             public static final variables
+                          static, and non-static Only
+Implementation	          Can implement interfaces	             Cannot implement abstract classes
+Keywords	abstract	  interface
+Inheritance	              Can extend a class and 	             Can only extend another interface
+                          implement interfaces
+Access Modifiers	      Members can be private, 	              All members are public by default
+                          protected, public
+Instantiation	          Cannot instantiate	                  Cannot instantiate
+
+Example:                   abstract class Shape {                  interface Drawable {
+                           abstract void draw();                   void draw();
+                            }                                         }
+

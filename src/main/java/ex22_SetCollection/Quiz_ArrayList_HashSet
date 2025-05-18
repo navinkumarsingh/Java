@@ -1,0 +1,72 @@
+Quiz: Java ArrayList & HashSet
+1. Which of the following is true about ArrayList in Java?
+a) It maintains insertion order.
+b) It does not allow duplicate elements.
+c) It allows multiple null values.
+d) Both a and c.
+2. What is the initial size of an ArrayList when it is created using the default constructor?
+a) 10
+b) 0
+c) 5
+d) 1
+3. Which method is used tremove all elements from an ArrayList?
+a) clear()
+b) removeAll()
+c) deleteAll()
+d) empty()
+4. Can you store both homogeneous and heterogeneous data types in an ArrayList?
+a) Yes
+b) No
+5. Which of the following is NOT true about HashSet?
+a) It does not maintain insertion order.
+b) It allows duplicate elements.
+c) It allows only one null value.
+d) It does not support indexing.
+
+6. What happens if you try tadd a duplicate element ta HashSet?
+a) It throws a DuplicateElementException.
+b) The duplicate element is ignored.
+c) It replaces the existing element.
+d) It adds the duplicate element.
+7. Which method is used tcheck if an ArrayList contains a specific element?
+a) hasElement(Object o)
+b) exists(Object o)
+c) contains(Object o)
+d) find(Object o)
+8. Which interface does ArrayList implement?
+a) Set
+b) Map
+c) List
+d) Queue
+9. Which of the following is a key difference between ArrayList and HashSet?
+a) ArrayList allows duplicates, while HashSet does not.
+b) ArrayList does not maintain order, while HashSet maintains order.
+c) Both allow duplicate elements.
+d) HashSet supports indexing, while ArrayList does not.
+10. Which method in HashSet is used tadd elements?
+a) insert()
+b) add()
+c) put()
+d) append()
+
+Answers:
+1. d) Both a and c.
+ArrayList maintains insertion order and allows multiple null values.
+2. b) 0
+The initial size of an ArrayList is 0 when created with the default constructor.
+3. a) clear()
+The clear() method removes all elements from an ArrayList.
+4. a) Yes
+ArrayList can store both homogeneous and heterogeneous data types.
+5. b) It allows duplicate elements.
+HashSet does not allow duplicate elements.
+6. b) The duplicate element is ignored.
+If a duplicate element is added ta HashSet, it is ignored.
+7. c) contains(Object o)
+The contains() method checks if an ArrayList contains a specific element.
+8. c) List
+ArrayList implements the List interface.
+9. a) ArrayList allows duplicates, while HashSet does not.
+ArrayList allows duplicate elements, but HashSet does not.
+10. b) add()
+The add() method is used tadd elements ta HashSet

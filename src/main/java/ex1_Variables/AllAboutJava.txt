@@ -1,0 +1,57 @@
+What is Java?
+Java is a platform-independent, object-oriented programming language used to build robust and secure applications.
+It follows the OOP model (Object-Oriented Programming), meaning the code is structured around objects and classes.
+
+Types of Programming Languages:
+Structured Languages – Focus on logical, procedural flow (e.g., C, Python).
+Object-Based Languages – Support some OOP concepts but lack inheritance (e.g., VBScript, Visual Basic).
+Object-Oriented Languages – Fully support OOP features like inheritance and polymorphism (e.g., Java, C++, Python).
+
+OOP Concepts in Java:
+Class: Blueprint for creating objects.
+Object: Instance of a class.
+Inheritance: Derive new classes from existing ones.
+Polymorphism: Use a single method in multiple forms.
+Encapsulation: Hide internal details; expose only what's needed.
+Abstraction: Focus on essential features while hiding complexity.
+
+
+Core Java vs Advanced Java:
+Core Java: Includes basics such as syntax, OOP, data structures, etc.
+Advanced Java: Includes concepts like web applications, JDBC, and Servlets.
+
+Java Features:
+Platform-independent (write once, run anywhere).
+Case-sensitive.
+Strong memory management.
+Robust exception handling.
+
+Java Components:
+JDK (Java Development Kit): For writing and compiling code.
+JRE (Java Runtime Environment): For running compiled applications.
+JVM (Java Virtual Machine): Executes the bytecode.
+
+Java Installation Tips:
+Download JDK from official sources.
+Set the JAVA_HOME path.
+Use java -version in terminal/command prompt to verify setup.
+
+Using Eclipse IDE:
+Create a new Java project.
+Add a package and a class.
+Write your code and run it with a single click.
+
+Naming Conventions in Java:
+Class names start with a capital letter (e.g., StudentData).
+Avoid special characters and starting names with numbers.
+Use camelCase for variables and methods.
+
+Comments in Java:
+Single-line: // Comment here
+Multi-line: /* Multiple lines of comments */
+
+
+Common Keyboard Shortcuts in Eclipse:
+syso + Ctrl+Space: Print statement auto-complete.
+Ctrl+/: Comment or uncomment a line.
+Ctrl+Shift+/: Multi-line comment.

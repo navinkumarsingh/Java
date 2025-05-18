@@ -1,0 +1,190 @@
+🔐 Access Modifiers in Java
+Access modifiers define the visibility or scope of classes, attributes, methods, and constructors. They control how different parts of a Java program can interact.
+
+Modifier	Within Class	Within Package	Subclass (Other Package)	Other Classes
+public	         ✅	             ✅	                  ✅	                 ✅
+protected	     ✅	             ✅	                  ✅	                 ❌
+default	         ✅	             ✅	                  ❌	                 ❌
+private          ✅	             ❌	                  ❌	                 ❌
+
+Quick Summary:
+public – Accessible from everywhere.
+
+protected – Accessible within the same package and subclasses in other packages.
+
+(default) – Accessible within the same package only.
+
+private – Accessible only within the same class.
+
+🔍 Abstraction in Java (Data Abstraction)
+Abstraction is the concept of hiding internal implementation details and showing only essential features.
+
+Real-World Analogy:
+When you send an SMS, you only type the message and hit "send"—you don’t see how it's delivered behind the scenes.
+
+Benefits:
+Focus on what an object does, not how it does it.
+
+Reduces complexity by hiding internal details.
+
+🛠 How to Achieve Abstraction
+Method	Abstraction Level	Notes
+Abstract Class	0% to 100%	Partial abstraction, can mix abstract & concrete methods
+Interface	100% (pre-Java 8)	Only abstract methods (until Java 8)
+
+🧱 Abstract Class in Java
+Definition:
+An abstract class is declared using the abstract keyword and can contain:
+
+Abstract methods (without implementation)
+
+Concrete methods (with implementation)
+
+Key Points:
+Cannot be instantiated.
+
+Can contain:
+
+Constructors
+
+Static methods
+
+Final methods
+
+Must be extended by a subclass.
+
+
+abstract class Animal {
+    abstract void sound(); // Abstract method
+    void breathe() {
+        System.out.println("Breathing...");
+    }
+}
+🧪 Lab Assignment: Abstraction with Abstract Classes
+🎯 Objective:
+Implement a banking system using an abstract class that includes both abstract and concrete methods.
+
+🔧 Task Overview:
+You will implement:
+
+Abstract Class: BankAccount
+
+Subclasses: SavingsAccount, CurrentAccount
+
+Main Class: BankDemo
+
+✅ Key Requirements:
+1. Abstract Class: BankAccount
+Abstract Method: calculateInterest()
+
+Constructor: To initialize accountNumber and balance
+
+Concrete Methods:
+
+deposit()
+
+withdraw()
+
+final Method: displayBalance()
+
+static Method: bankDetails()
+
+2. Subclasses:
+SavingsAccount
+
+Implements calculateInterest() logic to add interest
+
+CurrentAccount
+
+Implements calculateInterest() (No interest applied)
+
+3. Main Class: BankDemo
+Instantiate both account types
+
+Perform:
+
+Deposits
+
+Withdrawals
+
+Interest calculations
+
+Balance displays
+
+🧭 Step-by-Step Instructions
+🪜 Step 1: Create Abstract Class – BankAccount
+
+abstract class BankAccount {
+    int accountNumber;
+    double balance;
+
+    BankAccount(int accNo, double initialBalance) {
+        this.accountNumber = accNo;
+        this.balance = initialBalance;
+    }
+
+    abstract void calculateInterest();
+
+    void deposit(double amount) {
+        balance += amount;
+    }
+
+    void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Insufficient funds.");
+        }
+    }
+
+    final void displayBalance() {
+        System.out.println("Balance: " + balance);
+    }
+
+    static void bankDetails() {
+        System.out.println("Bank: ABC Bank, IFSC: ABC0001234");
+    }
+}
+🪜 Step 2: Create Subclass – SavingsAccount
+
+class SavingsAccount extends BankAccount {
+
+    SavingsAccount(int accNo, double initialBalance) {
+        super(accNo, initialBalance);
+    }
+
+    void calculateInterest() {
+        double interest = balance * 0.04; // 4% interest
+        balance += interest;
+    }
+}
+🪜 Step 3: Create Subclass – CurrentAccount
+
+class CurrentAccount extends BankAccount {
+
+    CurrentAccount(int accNo, double initialBalance) {
+        super(accNo, initialBalance);
+    }
+
+    void calculateInterest() {
+        // No interest for current accounts
+        System.out.println("No interest for Current Account");
+    }
+}
+🪜 Step 4: Create Main Class – BankDemo
+
+public class BankDemo {
+    public static void main(String[] args) {
+        BankAccount.bankDetails();
+
+        SavingsAccount savings = new SavingsAccount(101, 1000);
+        savings.deposit(500);
+        savings.calculateInterest();
+        savings.displayBalance();
+
+        CurrentAccount current = new CurrentAccount(102, 2000);
+        current.withdraw(300);
+        current.calculateInterest();
+        current.displayBalance();
+    }
+}

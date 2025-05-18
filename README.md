@@ -14,7 +14,7 @@ tailored for SDET (Software Development Engineer in Test) roles.
 ## Repository Structure
 
 - Organized by topic and difficulty for easy navigation.
-- Each folder contains code samples and assignments.
+- Each folder contains theory, code samples and assignments.
 
 ## Connect
 

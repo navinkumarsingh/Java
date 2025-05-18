@@ -1,0 +1,76 @@
+Question 1:
+What is upcasting in Java?
+• A) Casting a child class object to a parent class type
+• B) Casting a parent class object to a child class type
+• C) Assigning primitive types to objects
+• D) Type casting between unrelated classes
+Answer: A) Casting a child class object to a parent class type
+Question 2:
+Which of the following is true about upcasting?
+• A) It requires explicit casting
+• B) It always results in a runtime exception
+• C) It is implicit and safe
+• D) It changes the actual object type
+Answer: C) It is implicit and safe
+Question 3:
+What is downcasting in Java?
+• A) Casting a child class object to a parent class type
+• B) Casting a parent class object to a child class type
+• C) Casting between different interface types
+• D) Casting between unrelated classes
+Answer: B) Casting a parent class object to a child class type
+Question 4:
+Why is downcasting considered unsafe?
+• A) It can cause compilation errors
+• B) It always results in data loss
+• C) It requires explicit casting and can throw ClassCastException
+• D) It prevents method overriding
+Answer: C) It requires explicit casting and can throw ClassCastException
+
+Question 5:
+Which of the following is an example of upcasting?
+class Animal {}
+class Dog extends Animal {}
+Animal animal = new Dog();
+• A) Animal animal = new Dog();
+• B) Dog dog = new Animal();
+• C) Dog dog = (Dog) new Animal();
+• D) None of the above
+Answer: A) Animal animal = new Dog();
+Question 6:
+Which of the following requires explicit casting?
+class Animal {}
+class Dog extends Animal {}
+• A) Animal animal = new Dog();
+• B) Dog dog = (Dog) animal;
+• C) Animal animal = (Animal) dog;
+• D) Dog dog = new Dog();
+Answer: B) Dog dog = (Dog) animal;
+Question 7:
+What happens if you attempt downcasting with an object that is not an instance of the target
+subclass?
+• A) It compiles successfully but fails at runtime with ClassCastException
+• B) It results in a compile-time error
+• C) The object changes its type automatically
+• D) Java automatically handles the conversion
+Answer: A) It compiles successfully but fails at runtime with ClassCastException
+Question 8:
+Which of the following code snippets will compile successfully and execute without any exceptions?
+class Animal {}
+class Dog extends Animal {}
+class Cat extends Animal {}
+Animal animal = new Dog();
+Dog dog = (Dog) animal;
+
+• A) Dog dog = new Cat();
+• B) Animal animal = new Dog();
+• C) Dog dog = (Dog) new Cat();
+• D) Cat cat = (Cat) animal;
+Answer: B) Animal animal = new Dog();
+Question 9:
+Which of the following statements about upcasting and downcasting is correct?
+• A) Upcasting allows access to subclass-specific methods
+• B) Downcasting is implicit and safe
+• C) Upcasting hides subclass-specific methods
+• D) Downcasting is always safe at runtime
+Answer: C) Upcasting hides subclass-specific methods
