@@ -1,6 +1,6 @@
 # Java Programming for SDET - Learning & Practice
 
-Welcome! This repository documents my self-paced journey through the "Learn Java Programming" course by Pavan Kumar,
+Welcome! This repository documents my self-paced journey through the "Learn Java Programming"
 tailored for SDET (Software Development Engineer in Test) roles.
 
 ## About the Repository
@@ -9,12 +9,7 @@ tailored for SDET (Software Development Engineer in Test) roles.
   and problem-solving techniques.
 - All programs are implemented and practiced by myself to strengthen my Java and automation skills.
 - Follows a logical learning path from basics to advanced topics, with clear code examples and explanations.
-- 
-## Course Details
 
-- **Course:** Learn Java Programming by Pavan Kumar
-- **Focus:** SDET/QA Automation
-- **Instructor:** [Pavan Kumar](https://www.udemy.com/course/learn-java-programming-a/)
 
 ## Repository Structure
 
@@ -24,7 +19,6 @@ tailored for SDET (Software Development Engineer in Test) roles.
 ## Connect
 
 - [My LinkedIn - Navin Kumar Singh](https://www.linkedin.com/in/navin-bmsce/)
-- [Course Instructor - Pavan Kumar](https://www.linkedin.com/in/pavan-kumar-bhimavarapu-4aa7a332/)
 
 
 **Check out the code and feel free to connect or contribute!**
