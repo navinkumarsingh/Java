@@ -5,13 +5,15 @@ from Pavan Kumar and Abdul Bari, and enriched by my own research and hands-on pr
 
 ## Highlights
 
-- **Thorough coverage** of Java fundamentals: variables, data types, operators, control statements, loops, and methods, 
-  each reinforced with practical assignments.
-- **Deep dive into OOPs**, Collections (`ArrayList`, `HashSet`, `HashMap`), File Handling, and real-world problem-solving.
+- **Thorough coverage of Java fundamentals:** **variables, data types, operators, control statements, loops, methods, 
+  arrays, strings, object-oriented programming (OOPs), classes, objects, inheritance, polymorphism, abstraction, 
+  encapsulation, interfaces, exception handling, collections (`ArrayList`, `HashSet`, `HashMap`), file handling, and 
+  properties files**—each reinforced with practical assignments.
 - **All code is self-written, tested, and explained**—demonstrating my commitment to learning by doing.
-- **Special focus on Arrays & Strings**: a dedicated folder with curated programs, solutions, and detailed explanations.
-- **Well-organized structure**: topics progress from basics to advanced, with clear navigation, theory, and code samples.
+- **Special focus on Arrays & Strings:** a dedicated folder with curated programs, solutions, and detailed explanations.
+- **Well-organized structure:** topics progress from basics to advanced, with clear navigation, theory, and code samples.
 - **Includes file handling and properties file examples** relevant for automation and real SDET scenarios.
+- **This repository also contains thorough notes for each and every topic, and every line of code is accompanied by detailed explanations of the logic being used.**
 
 ## Acknowledgements
 
