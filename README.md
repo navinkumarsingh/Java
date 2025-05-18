@@ -27,6 +27,6 @@ Gratitude to **Abdul Bari**, **Pavan Kumar**, and the broader Java community for
 
 ## Connect
 
-- [LinkedIn: Navin Kumar Singh]((https://www.linkedin.com/in/navin-bmsce/))
+- [LinkedIn: Navin Kumar Singh](https://www.linkedin.com/in/navin-bmsce/)
 
 **Explore the code, learn, and feel free to connect or contribute!**
