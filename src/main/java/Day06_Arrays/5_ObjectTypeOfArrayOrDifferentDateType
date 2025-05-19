@@ -1,0 +1,86 @@
+Object type of an Array
+So far we understood one definition about Array. Array is a collection of elements or collection of values of
+same data type that is homogeneous data means same data type values.
+
+If we create an integer array we have to store only integer.
+If we create double array we can store only double.
+If we create array as String we can store only Strings.
+
+But if we want to store heterogeneous data that means if we want to store different type of data in Array how that is
+possible.
+
+So this is also possible but that is not recommended actually. But if we have different type of data then we can
+directly go with ArrayList. ArrayList is one of the collection type, so that is preferred. Most of the times.
+
+But we can also use array to store different type of data but this is unofficial normally we don't use this.
+But if in Interview if anybody ask you can store heterogeneous data in Array. We can say Yes.
+By using Object Array we can do that.
+
+Explanation:
+So if we want to store heterogeneous data in Array it shouldn't be any Specific datatype.
+Ex: int a[] = {100,10.5,'A',"WELCOME", true}; - This is wrong. If datatype is 'int' or any specific datatype, it's not allowed.
+
+So, If we want to store heterogeneous data in an array variable that variable should be Object type of variable.
+
+What is an Object: Object is an predefined class in java just like a String. in String 'S' is a capital letter right.
+So just like a String, Object is also one of the type or one of the class in java is a root class actually all other
+classes are derived from the same root object class.So Object is a Super class/Root class of all predefined classes in
+java.
+
+So, if we want to store heterogeneous type of data. the array type should be Object.
+Object a[] ={100,10.5,'A',"WELCOME",true};
+
+So we will see some example.
+If we create int variable we can store only number.  -> int a=10
+If we create double or float we can store only decimal number. -> double d=10.5
+If we create char variable we can store only char variable.  -> char c ='A'
+If we create String variable we can store only String. -> String s  = "Welcome"
+If we create boolean variable we can store only true/false. -> boolean b = true
+
+But if we create Object type of variable this can hold any type of data. We can store integer,double, character, String,
+boolean all kind of data is allowed in Object type of variable.
+   Object x = Allowed all kind of data
+
+Same thing for Arrays also:
+If we create an array as int, we can store only integer values in Array.  -> int a=10
+If we create an array as double, we can store only decimal numbers in Array.  -> double d=10.5
+If we create an array as char, we can store only characters in Array.   -> char c ='A'
+If we create an array as String, we can store only Strings.  -> String s  = "Welcome"
+
+But if we create an array with object type we can store different type of data.
+    Object a[] = {100,10.5,'A',"WELCOME",true};
+
+Next how to read these data: 1. Using enhanced for loop 2. Using Normal for Loop
+
+package Day06_Arrays;
+
+public class Ex6_ObjectArray {
+    public static void main(String[] args) {
+
+        Object a[] = {100,10.5,'A',"WELCOME",true};
+        //read the data using Enhanced for loop
+/*
+
+        for(Object x:a)
+        {
+        System.out.println(x);
+        }
+*/
+
+        //read the data using normal for loop
+        for (int i=0;i<a.length;i++)
+        {
+            System.out.println(a[i]);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
