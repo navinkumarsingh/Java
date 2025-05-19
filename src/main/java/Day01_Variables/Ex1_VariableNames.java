@@ -1,4 +1,4 @@
-package ex1_Variables;
+package Day01_Variables;
 
 public class Ex1_VariableNames
 {
