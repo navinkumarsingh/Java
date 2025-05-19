@@ -1,4 +1,4 @@
-package Ex16_OverloadingOverridingSuperFinal;
+package ex16_OverloadingOverridingSuperFinal;
 
 //Super can be used to refer immediate parent class variable.
 //Super can be used to refer immediate parent class method.

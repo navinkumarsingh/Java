@@ -1,5 +1,4 @@
-package Ex14_StaticKeyword;
-import Ex14_StaticKeyword.Ex1_StaticDemo;
+package ex14_StaticKeyword;
 
 //accessing static and non-static methods and variables when main() in some other class
 public class Ex2_StaticMain {

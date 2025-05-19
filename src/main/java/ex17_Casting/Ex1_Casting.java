@@ -1,4 +1,4 @@
-package Ex17_Casting;
+package ex17_Casting;
 
     //Parent
     class Vehicle

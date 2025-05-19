@@ -1,4 +1,4 @@
-package Ex18_AccessModifierAndDataAbstraction;
+package ex18_AccessModifierAndDataAbstraction;
 
 abstract class Bike {
     void start() { //Non-abstract method/normal/default

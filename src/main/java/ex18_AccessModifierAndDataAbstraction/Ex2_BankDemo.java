@@ -1,4 +1,4 @@
-package Ex18_AccessModifierAndDataAbstraction;
+package ex18_AccessModifierAndDataAbstraction;
 public class Ex2_BankDemo {
     public static void main(String[] args) {
 

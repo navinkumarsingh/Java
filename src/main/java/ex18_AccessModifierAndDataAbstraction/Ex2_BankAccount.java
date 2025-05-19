@@ -1,4 +1,4 @@
-package Ex18_AccessModifierAndDataAbstraction;
+package ex18_AccessModifierAndDataAbstraction;
 
 //Abstract class: BankAccount
 abstract class Ex2_BankAccount {

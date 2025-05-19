@@ -1,4 +1,4 @@
-package Ex14_StaticKeyword;
+package ex14_StaticKeyword;
 
 public class Ex3_ObjectCounter {
 

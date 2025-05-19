@@ -1,4 +1,4 @@
-package Ex16_OverloadingOverridingSuperFinal;
+package ex16_OverloadingOverridingSuperFinal;
 final class FinalClass
 {
     final int var=100;

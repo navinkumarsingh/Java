@@ -1,4 +1,4 @@
-package Ex17_Casting;
+package ex17_Casting;
 /*
 A b = (C) d;
 

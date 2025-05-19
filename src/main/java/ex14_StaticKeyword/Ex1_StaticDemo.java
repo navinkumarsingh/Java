@@ -1,4 +1,4 @@
-package Ex14_StaticKeyword;
+package ex14_StaticKeyword;
 
 //accessing static and non-static methods and variables when main() inside the same class
 public class Ex1_StaticDemo {

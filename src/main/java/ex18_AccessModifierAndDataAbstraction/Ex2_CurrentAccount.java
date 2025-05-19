@@ -1,4 +1,4 @@
-package Ex18_AccessModifierAndDataAbstraction;
+package ex18_AccessModifierAndDataAbstraction;
 //Subclass: CurrentAccount
 public class Ex2_CurrentAccount extends Ex2_BankAccount {
 
