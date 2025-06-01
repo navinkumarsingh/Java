@@ -1,7 +1,6 @@
 # Java Programming for SDET - Learning & Practice
 
-This repository is a comprehensive record of my self-driven journey to master Java for SDET roles, inspired by courses 
-from Pavan Kumar and Abdul Bari, and enriched by my own research and hands-on practice.
+This repository is a comprehensive record of my self-driven journey to master Java for SDET roles.
 
 ## 🔍 Highlights
 **Thorough coverage of Java fundamentals:**
@@ -21,9 +20,6 @@ Includes file handling and properties file examples applicable to automation and
 
 **In-depth explanations:**
 Each topic is supported by thorough notes, and every line of code includes detailed logic commentary.
-
-## 🙏 Acknowledgements
-Gratitude to **Abdul Bari**, **Pavan Kumar**, and the broader Java community for foundational resources and inspiration that guided this learning path.
 
 ## Connect
 
